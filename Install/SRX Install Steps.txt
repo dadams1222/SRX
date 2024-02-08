@@ -1,0 +1,34 @@
+SRX Install
+Import Templates (with stored procedures)
+--Configuration templates--
+SRX_Config
+srx_addl_settings_ext
+srx_multi_shared_ext
+
+--Administration Templates Combined--
+Srx_administration
+srx_sub_med
+srx_sub_vacc
+srx_mng_office_px_dm
+srx_vacc_module
+
+
+--Administration Templates Single--
+Srx_order_management
+srx_proc_implant_contra
+srx_proc_IUD
+srx_tuberculin_skin_test
+srx_vaccine_admin
+
+
+
+--Other templates: for internal use, not for install--
+srx_sub_barcode   -- mr sub template to use for copying setup to another MR template
+srx_sub_barcode_dm -- dm sub template to use for copying to another demographics template
+
+
+SRX Configuration
+Setup SRX Trinet Configuration practice template.
+Run "ConfigMed", "ConfigVacc", or "ConfigBoth" for license option
+Run "Config" first time install
+Run "ConfigFunction" first time install

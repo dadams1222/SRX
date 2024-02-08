@@ -1,0 +1,53 @@
+-----Config statements for template (ClientID|KEY|URL) --A for auto billing, M for manually billing
+ConfigClient|DEV|AllowWS|https://srx.trinetmedical.com/api/GetRxInfo|A
+ConfigClient|NEVHC|AllowWS|http://192.168.0.203/api/GetRxInfo|A
+ConfigClient|DVCH|AllowWS|http://172.16.101.190/api/GetRxInfo|A
+ConfigClient|COMMHEALTHTEST|AllowWS|https://srxtest.trinetmedical.com/api/GetRxInfo|A
+--Also run
+ConfigFunction
+Config
+ConfigClient...
+ConfigLocationFunction
+ConfigLocationTable
+
+
+--keys for clients
+"CMC"
+"C3316A16-3130-4FD7-BDD1-02492FF4AFAD"
+"http://NG-MEDISRX/api/GetRxInfo"
+
+
+"DEV"
+"AllowWS"
+"https://srx.trinetmedical.com/api/GetRxInfo"  
+
+"CMCTest"
+"AllowWS"
+"https://srxtest.trinetmedical.com/api/GetRxInfo"
+
+"NEVHC"
+"AllowWS"
+"http://192.168.0.203/api/GetRxInfo"  -- PROD
+
+"DVCH"
+"AllowWS"
+"http://172.16.101.190/api/GetRxInfo"
+
+"COMMHEALTHTEST"
+--"COMMHEALTHTEST01"
+"AllowWS"
+"https://srxtest.trinetmedical.com/api/GetRxInfo"   
+
+SRX Test Env URL - http://172.16.101.191/ 
+End Point - http://172.16.101.191/getrxinfoJSON.asmx/GetRxInfo 
+End Point - http://172.16.101.191/api/GetRxInfo 
+Client ID & API Key - DVCHTEST|2.4 XD|AllowWS
+Login Credentials 
+URL:  http://172.16.101.191/ 
+Client ID: DVCHTEST
+Station ID: DVCHTEST01
+UserName : TestAdmin
+Password:  TestAdmin@2022
+
+
+

@@ -1,0 +1,4457 @@
+<?xml version="1.0" standalone="yes"?>
+<srx_sub_med>
+  <xs:schema id="srx_sub_med" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="srx_sub_med" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="ProductVersion">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Product" type="xs:string" minOccurs="0" />
+                <xs:element name="Version" type="xs:string" minOccurs="0" />
+                <xs:element name="Database" type="xs:string" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="templates">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="template_id" type="xs:int" />
+                <xs:element name="template_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="template_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="18" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="label_count" type="xs:int" minOccurs="0" />
+                <xs:element name="back_color" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="12" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="created_by" type="xs:int" />
+                <xs:element name="modified_by" type="xs:int" />
+                <xs:element name="perm_pos" type="xs:int" minOccurs="0" />
+                <xs:element name="time_last_modified" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="6" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="button_count" type="xs:int" minOccurs="0" />
+                <xs:element name="create_timestamp" type="xs:dateTime" />
+                <xs:element name="modify_timestamp" type="xs:dateTime" />
+                <xs:element name="def_font_face" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="40" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="def_font_size" type="xs:int" minOccurs="0" />
+                <xs:element name="def_font_bold_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="def_font_italic_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="datasheet_count" type="xs:int" minOccurs="0" />
+                <xs:element name="posx" type="xs:int" minOccurs="0" />
+                <xs:element name="posy" type="xs:int" minOccurs="0" />
+                <xs:element name="width" type="xs:int" minOccurs="0" />
+                <xs:element name="height" type="xs:int" minOccurs="0" />
+                <xs:element name="encsheet_count" type="xs:int" minOccurs="0" />
+                <xs:element name="background_image" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="image_count" type="xs:int" minOccurs="0" />
+                <xs:element name="ex_style" type="xs:int" minOccurs="0" />
+                <xs:element name="color_depth" type="xs:int" minOccurs="0" />
+                <xs:element name="device_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="8" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="page_count" type="xs:int" minOccurs="0" />
+                <xs:element name="source_template" type="xs:int" minOccurs="0" />
+                <xs:element name="view_template" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="template_display_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="cache_timestamp" type="xs:dateTime" minOccurs="0" />
+                <xs:element name="alias_template" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="alias_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="kbm_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="hash_value" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="gsm_enabled_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="background_image_low_color" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sidebar_template_id" type="xs:int" minOccurs="0" />
+                <xs:element name="sidebar_auto_hide_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sidebar_dock_left_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="panel_pos_x" type="xs:int" minOccurs="0" />
+                <xs:element name="sidebar_template_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sub_template_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="template_comments" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ok_cancel_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ok_map_to" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="cancel_map_to" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="topbar_config_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="tables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="table_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="table_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="18" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="template_fields">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="table_name" msdata:ReadOnly="true" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_name" msdata:ReadOnly="true" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="8" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_length" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="tabstop_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="tab_order" type="xs:int" />
+                <xs:element name="posx" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="posy" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="width" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="height" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_style" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="80" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="font_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="40" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="font_bold_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="font_italic_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="font_size" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="3" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="fore_color_normal" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="12" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="fore_color_current" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="12" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="fore_color_select" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="12" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="back_color_normal" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="12" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="back_color_current" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="12" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="back_color_select" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="12" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="picture" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="80" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="default_value" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="justification" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="err_prompt" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="80" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="message_line" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="80" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="modifiable_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="required_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="display_as" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="18" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="description" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="500" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="list_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="list_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="bvalidate_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="bhidden_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="compacted_label" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="250" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="page_number" type="xs:int" minOccurs="0" />
+                <xs:element name="ex_style" type="xs:int" minOccurs="0" />
+                <xs:element name="panel_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="public_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="profile_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" minOccurs="0" />
+                <xs:element name="spellcheck_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="fields_master">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="table_name" msdata:ReadOnly="true" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_name" msdata:ReadOnly="true" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="8" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_length" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="demographics_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="encounters_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="medical_records_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="modifiable_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="required_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_comment" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="attribute_field_mstr">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="attrib_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="table_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="attrib_value">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="user_mod_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="field_lists">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="table_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="description">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="40" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sequence" type="xs:int" minOccurs="0" />
+                <xs:element name="field_value" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="triggers">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="field">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="trig_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="action">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="trig_seq_no" type="xs:int" />
+                <xs:element name="trig_order" type="xs:int" />
+                <xs:element name="condition" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="parm1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="200" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="parm2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="400" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="enable_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="comments" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="dbpicklists">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="table_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="list_table">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="list_field" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="list_order" type="xs:int" />
+                <xs:element name="iskey_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="assgn_table" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="assgn_field" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="trig_id" type="xs:int" />
+                <xs:element name="column_width" type="xs:int" minOccurs="0" />
+                <xs:element name="header_desc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="mstr_lists">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="mstr_list_type">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="mstr_list_item_desc">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="list_order" type="xs:int" minOccurs="0" />
+                <xs:element name="mstr_list_item_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="cache_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="show_in_emr_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="external_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="popups">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="table_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="list_table">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="list_field">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="list_order" type="xs:int" />
+                <xs:element name="assgn_table" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="assgn_field" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="summary_items">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="control_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sequence" type="xs:int" />
+                <xs:element name="table_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="column_width" type="xs:int" minOccurs="0" />
+                <xs:element name="column_header" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="8" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="column_mask" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sort_date_ind" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="summary_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="control_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="200" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="custom_filter" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="mail_triggers">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="message_id" type="xs:int" />
+                <xs:element name="users_to" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="users_cc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="subject" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="mail_trig_msg">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="message_id" type="xs:int" />
+                <xs:element name="sequence" type="xs:int" />
+                <xs:element name="message_line" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="active_images">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="image_id" type="xs:int" />
+                <xs:element name="image_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="image_height" type="xs:int" />
+                <xs:element name="image_width" type="xs:int" />
+                <xs:element name="image_file">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="image_regions">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="image_id" type="xs:int" />
+                <xs:element name="region_id" type="xs:int" />
+                <xs:element name="region_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="80" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="region_desc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="200" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="labtrig_order_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" type="xs:int" />
+                <xs:element name="ordering_provider">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="test_location">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="order_priority">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="spec_action_code">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="billing_type">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="lab_id">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="comment_text" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="comment_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag_code1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag_code2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag_code3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag_code4" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="payer_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="person_payer_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="insured_person_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="cob" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="clinical_info" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="order_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="payer_id2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="person_payer_id2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="insured_person_id2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="cob2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="payer_id3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="person_payer_id3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="insured_person_id3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="cob3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="order_num" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ufo_num" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="type_of_order" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="labtrig_test_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" type="xs:int" />
+                <xs:element name="test_code_id">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="test_code_text">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="500" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="test_code_system">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="volume_quantity" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="volume_units" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="spec_src_code" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="spec_src_desc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="spec_src_additives" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="scheduled_time" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="condition01" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="condition02" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="test_id" type="xs:int" />
+                <xs:element name="diag_code1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag_code2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag_code3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag_code4" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="collection_time" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="proctrig_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" type="xs:int" />
+                <xs:element name="pkey">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag4" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="modif1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="modif2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="modif3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="modif4" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="accept_assign" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ref_prov" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="asst_prov" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="units" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="payer_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="svc_notes" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="250" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="prov_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="loc_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="tooth" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="surface" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="quadrant" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="suppress_billing" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="service_date" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="date_resolved" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag5" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag6" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag7" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag8" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="result_field" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="validate_diagnosis" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="rx_on_file" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag9" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag10" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag11" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diag12" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="enc_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="national_drug_code" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="unique_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="update_method" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="start_time" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="stop_time" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="place_of_service" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="todo_trig_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" type="xs:int" />
+                <xs:element name="task_priority" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="task_due_date" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="task_subj" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="task_desc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="use_patient_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="task_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="2" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="assign_to" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="250" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="assign_to_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="250" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="categories" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="show_tree_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="task_class" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="3" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="source_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="epm_task_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="task_enc_attach" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="up_ex_data_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="field">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_type">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="input_param" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="table_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="equip_trig_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="field">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="param">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="mednec_trig_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="part">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="cpt4" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="icd9" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="location" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="pass_code_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="pass_text_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="pass_icd9_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="policy_index_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="policy_number_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="policy_type_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="carrier_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="policy_desc_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="effective_date_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="frequency_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Age_A" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="pass_code_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="pass_text_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="pass_icd9_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="policy_index_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="policy_number_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="policy_type_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="carrier_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="policy_desc_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="effective_date_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="frequency_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="Age_B" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="webx_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="webx_action" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="20" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="tag_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="tag_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="trig_drug_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="ndc_id">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="11" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="selected_generic_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sig_codes" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sig_desc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="512" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diagnosis" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="start_date" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="date_stopped" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="rx_quantity" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="rx_units" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="rx_refills" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="generic_ok" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="samples" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="prescribed_else" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="print_spanish" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="rx_comment" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="250" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="interaction" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="education" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="dosing" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="formulary" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="dispense_as_writtn" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="org_refills" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="provider_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="location_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="unique_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="dosage_unknown" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="use_templ_field_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="ndc_med_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="med_id_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diagnosis2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="diagnosis3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="special_instruction" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="250" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="limit_refills" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="prior_author_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="prior_author_date" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="prn" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="prn_reason" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="prior_author" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="prescribed_else_location" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sample_lot_number" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="sample_exp_date" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="sp_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+                <xs:element name="param_type" msdata:ReadOnly="true" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="param_name" msdata:ReadOnly="true" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="param_dir" msdata:ReadOnly="true" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="data_type" msdata:ReadOnly="true" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="data_length" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+                <xs:element name="param_data" msdata:ReadOnly="true" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="param_num" msdata:ReadOnly="true" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="trig_mf_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="field_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_value" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="400" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="seq_nbr" type="xs:int" minOccurs="0" />
+                <xs:element name="enabled_flag">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="view_categories_mstr">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="cat_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="cat_desc">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="todo_categ_list">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="categ_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="categ_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="template_sets_info">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="template_id" type="xs:int" />
+                <xs:element name="set_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="set_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="64" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="in_use_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="icd_category_mstr">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="icd_category_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="description" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="40" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="short_description" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="note" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="show_in_ehr_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="show_in_epm_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="kbm_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="icd_xref_mstr">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="icd_category_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="diagnosis_code_id">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="10" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="kbm_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="svc_category_mstr">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="svc_category_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="description" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="40" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="short_description" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="note" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="kbm_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="svc_xref_mstr">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="svc_category_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="service_item_id">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="12" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="kbm_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="sp_control_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="control_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="30" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="param_type">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="param_num" type="xs:int" />
+                <xs:element name="param_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="50" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="param_dir">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="4" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="data_type">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="data_length" type="xs:int" />
+                <xs:element name="param_data" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="note_assign_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="concat_value" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="400" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="eval_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="seq_nbr" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="problem_trig_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="concept_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="prob_description" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="fully_specified_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="side_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="site_desc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="onset_date" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="last_addressed_date" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="resolved_date" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="resolved_reason" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="problem_status_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="clinical_status_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="chronic" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="secondary_condition" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="note" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="recorded_elsewhere_source" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="recorded_elsewhere" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="action_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="unique_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="track_prob" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="responsible_provider" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="comorbid_condition" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="problem_type" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="icdsnomedmap_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="field">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="output_param" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="allergy_reaction_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="reaction_desc">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="255" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="reaction_order" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="template_top_toolbar_config">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="bar_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="bar_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="template_type">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="18" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="template_top_toolbar_assign">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="bar_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="button_no" type="xs:int" />
+                <xs:element name="param_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="mod_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="40" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="image_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="100" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="tooltip" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="80" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="trig_script_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="template_id" type="xs:int" />
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="field_name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="field_value" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="400" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="seq_nbr" type="xs:int" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="trig_cds_xref">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="template_id" type="xs:int" />
+                <xs:element name="trig_id" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" type="xs:string" />
+                <xs:element name="provider_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="gender" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="dob" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="dx_code1" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="dx_code2" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="dx_code3" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="dx_code4" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="cpt4_code" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="entity_id" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="entity_name" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="lab_test_code" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="lab_test_desc" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="response_code" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="dsn" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="score" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="support_dtime" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="is_max_score" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="lab_test_code_out" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="lab_id_out" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="cpt4_out" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="mod_out" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="gcode_out" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="allow_alternate_cpt_selection" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="template_variables">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="template_id" type="xs:int" />
+                <xs:element name="name">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="60" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="type">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="10" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="default_value" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1000" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="variable_scope">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="10" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="style" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="8" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="var_comment" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="300" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="public_ind">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="1" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//tables" />
+        <xs:field xpath="table_name" />
+      </xs:unique>
+      <xs:unique name="attribute_field_mstr_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//attribute_field_mstr" />
+        <xs:field xpath="attrib_name" />
+        <xs:field xpath="table_name" />
+        <xs:field xpath="field_name" />
+      </xs:unique>
+      <xs:unique name="active_images_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//active_images" />
+        <xs:field xpath="image_id" />
+      </xs:unique>
+      <xs:unique name="image_regions_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//image_regions" />
+        <xs:field xpath="image_id" />
+        <xs:field xpath="region_id" />
+      </xs:unique>
+      <xs:unique name="mednec_trig_xref_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//mednec_trig_xref" />
+        <xs:field xpath="trig_id" />
+      </xs:unique>
+      <xs:unique name="view_categories_mstr_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//view_categories_mstr" />
+        <xs:field xpath="cat_id" />
+      </xs:unique>
+      <xs:unique name="todo_categ_list_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//todo_categ_list" />
+        <xs:field xpath="categ_id" />
+      </xs:unique>
+      <xs:unique name="icd_category_mstr_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//icd_category_mstr" />
+        <xs:field xpath="icd_category_id" />
+      </xs:unique>
+      <xs:unique name="icd_xref_mstr_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//icd_xref_mstr" />
+        <xs:field xpath="icd_category_id" />
+        <xs:field xpath="diagnosis_code_id" />
+      </xs:unique>
+      <xs:unique name="svc_category_mstr_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//svc_category_mstr" />
+        <xs:field xpath="svc_category_id" />
+      </xs:unique>
+      <xs:unique name="template_top_toolbar_config_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//template_top_toolbar_config" />
+        <xs:field xpath="bar_id" />
+      </xs:unique>
+      <xs:unique name="template_top_toolbar_assign_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//template_top_toolbar_assign" />
+        <xs:field xpath="bar_id" />
+        <xs:field xpath="button_no" />
+      </xs:unique>
+      <xs:unique name="trig_script_xref_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//trig_script_xref" />
+        <xs:field xpath="template_id" />
+        <xs:field xpath="trig_id" />
+        <xs:field xpath="field_name" />
+      </xs:unique>
+      <xs:unique name="trig_cds_xref_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//trig_cds_xref" />
+        <xs:field xpath="template_id" />
+        <xs:field xpath="trig_id" />
+      </xs:unique>
+      <xs:unique name="template_variables_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//template_variables" />
+        <xs:field xpath="template_id" />
+        <xs:field xpath="name" />
+      </xs:unique>
+    </xs:element>
+  </xs:schema>
+  <ProductVersion>
+    <Product>NextGen Template</Product>
+    <Version>6.0.0.209</Version>
+    <Database>SQL Server</Database>
+  </ProductVersion>
+  <templates>
+    <template_id>6934</template_id>
+    <template_name>srx_sub_med</template_name>
+    <template_type>medical_records</template_type>
+    <label_count>2</label_count>
+    <back_color>255,255,255</back_color>
+    <created_by>1202</created_by>
+    <modified_by>1202</modified_by>
+    <perm_pos>7029</perm_pos>
+    <button_count>1</button_count>
+    <create_timestamp>2024-01-31T01:38:16+00:00</create_timestamp>
+    <modify_timestamp>2024-02-06T17:43:45+00:00</modify_timestamp>
+    <def_font_face>Arial</def_font_face>
+    <def_font_size>8</def_font_size>
+    <def_font_bold_ind>N</def_font_bold_ind>
+    <def_font_italic_ind>N</def_font_italic_ind>
+    <datasheet_count>0</datasheet_count>
+    <posx>64</posx>
+    <posy>64</posy>
+    <width>984</width>
+    <height>167</height>
+    <encsheet_count>0</encsheet_count>
+    <image_count>0</image_count>
+    <ex_style>0</ex_style>
+    <color_depth>0</color_depth>
+    <page_count>0</page_count>
+    <cache_timestamp>2024-02-06T17:43:45+00:00</cache_timestamp>
+    <alias_ind>N</alias_ind>
+    <kbm_ind>N</kbm_ind>
+    <hash_value>F3-F2-BA-E4-26-E3-6F-BA-A8-6D-17-81-04-02-32-02-63-A2-00-AF</hash_value>
+    <gsm_enabled_ind>N</gsm_enabled_ind>
+    <sidebar_template_id>0</sidebar_template_id>
+    <sidebar_auto_hide_ind>Y</sidebar_auto_hide_ind>
+    <sidebar_dock_left_ind>Y</sidebar_dock_left_ind>
+    <panel_pos_x>0</panel_pos_x>
+    <sub_template_ind>Y</sub_template_ind>
+    <ok_cancel_ind>N</ok_cancel_ind>
+    <ok_map_to>Button001</ok_map_to>
+    <cancel_map_to>Button002</cancel_map_to>
+  </templates>
+  <tables>
+    <table_name>local</table_name>
+    <table_type>practice</table_type>
+  </tables>
+  <tables>
+    <table_name>srx_sub_med_</table_name>
+    <table_type>medical_records</table_type>
+  </tables>
+  <template_fields>
+    <table_name />
+    <field_name>Button001</field_name>
+    <field_type>button</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>2</tab_order>
+    <posx>0</posx>
+    <posy>144</posy>
+    <width>99</width>
+    <height>22</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>Y</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>18</fore_color_normal>
+    <fore_color_select>18</fore_color_select>
+    <back_color_normal>15</back_color_normal>
+    <picture>btn_administer_edit.ico</picture>
+    <default_value>btn_edit_order_active</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>641</ex_style>
+    <public_ind>Y</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name />
+    <field_name>Label001</field_name>
+    <field_type>label</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>0</tab_order>
+    <posx>0</posx>
+    <posy>3</posy>
+    <width>166</width>
+    <height>17</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>Y</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>10</font_size>
+    <fore_color_normal>34,191,251</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <default_value>Medication Administration</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>Y</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name />
+    <field_name>Label002</field_name>
+    <field_type>label</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>3</tab_order>
+    <posx>0</posx>
+    <posy>28</posy>
+    <width>297</width>
+    <height>13</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>Y</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>128,128,128</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <default_value>Select row below and click Administer/Edit button to scan/edit)</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>Y</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name />
+    <field_name>lbl_med_not_used</field_name>
+    <field_type>label</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>4</tab_order>
+    <posx>308</posx>
+    <posy>29</posy>
+    <width>367</width>
+    <height>21</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>Y</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>12</font_size>
+    <fore_color_normal>192,192,192</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <default_value>**MEDICATIONS NOT LICENSED FOR PRACTICE**</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>Y</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>local</table_name>
+    <field_name>opt_toggle_med</field_name>
+    <field_type>Decimal</field_type>
+    <field_length>2</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>5</tab_order>
+    <posx>700</posx>
+    <posy>10</posy>
+    <width>87</width>
+    <height>12</height>
+    <field_style>256</field_style>
+    <font_name>Arial</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>7</font_size>
+    <fore_color_normal>18</fore_color_normal>
+    <picture>opt_toggle_med</picture>
+    <default_value>0</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as>RadioButton</display_as>
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>Y</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>srx_sub_med</table_name>
+    <field_name>srx_mng_office_px_dm</field_name>
+    <field_type>demogrd</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>1</tab_order>
+    <posx>0</posx>
+    <posy>44</posy>
+    <width>983</width>
+    <height>98</height>
+    <field_style>3586</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>18</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <back_color_current>204,238,255</back_color_current>
+    <picture>1,0,-1,-1</picture>
+    <default_value>srx_mng_office_px_dm</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <description>"Details"  |{KBM.TOOL_TIP_MNG_GRID( {mng_office_px_dm_.tzds_ordered_dt_time},{mng_office_px_dm_.tzds_completed_dt_time},{mng_office_px_dm_.orderedDate},{mng_office_px_dm_.completedDate},"Ordered Date:","Completed Date:")}</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <compacted_label>Segoe UI|8|0|0</compacted_label>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>Y</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <triggers>
+    <field>Button001: "btn_edit_order_active"</field>
+    <trig_name>Button Click</trig_name>
+    <action>Edit Data Grid</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>1</trig_order>
+    <parm1>srx_mng_office_px_dm</parm1>
+    <parm2>Open</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_toggle_med</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Hide Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>1</trig_order>
+    <parm2>B0C178D4-2E4C-45D5-BDD9-299EBEF7A7B1</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_toggle_med</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Show Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>2</trig_order>
+    <parm2>A7E40462-99EB-4A2F-9D9E-5F2424E0988D</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Assign Field Value</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>2</trig_order>
+    <parm2>B3981E58-C648-4B49-9062-6881755C1A9F</parm2>
+    <enable_ind>N</enable_ind>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Assign Field Value</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>3</trig_order>
+    <parm2>B2267BBB-3613-46B1-A262-9F3A6A2E7392</parm2>
+    <enable_ind>N</enable_ind>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Assign Field Value</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>4</trig_order>
+    <parm2>EE4D6F8A-D1BB-4C69-BCF8-0545850E3D29</parm2>
+    <enable_ind>N</enable_ind>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Assign Field Value</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>5</trig_order>
+    <parm2>848D1AC4-3069-43A9-BFDA-A06BE25C2FAC</parm2>
+    <enable_ind>N</enable_ind>
+    <comments>replaces ngkbm_get_order_subset_link</comments>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Assign Field Value</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>6</trig_order>
+    <parm2>212AB5BF-E55D-439A-B527-2078460AF58E</parm2>
+    <enable_ind>N</enable_ind>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Assign Field Value</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>9</trig_order>
+    <condition>{srx_mng_office_px_dm_.actTextDisplay}="Guaiac Card" &amp; {order_management_.txt_step}="completed"</condition>
+    <parm2>52E53FEE-9AB0-4EAA-9064-08E0AC7434D1</parm2>
+    <enable_ind>N</enable_ind>
+    <comments>{order_management_.txt_actTxtDisplay}="Guaiac card" &amp; {order_management_.txt_step}="completed"</comments>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Assign Field Value</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>10</trig_order>
+    <condition>{ROWID( srx_mng_office_px_dm )} != ""</condition>
+    <parm2>6D04E3F7-6CC6-4D59-89EC-D5864F5A680F</parm2>
+    <enable_ind>N</enable_ind>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Assign Field Value</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>11</trig_order>
+    <parm2>DF1DA338-DEDA-414C-A4D2-93646B2B4975</parm2>
+    <enable_ind>N</enable_ind>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Assign Note Value</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>1</trig_order>
+    <parm1>referrals_order_.txt_act_comments</parm1>
+    <parm2>30D2AF3F-F7E0-456E-9B89-9A3A54A9F90D</parm2>
+    <enable_ind>N</enable_ind>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Refresh Data Grid</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>8</trig_order>
+    <parm1>order_management_data</parm1>
+    <enable_ind>N</enable_ind>
+  </triggers>
+  <triggers>
+    <field>srx_mng_office_px_dm</field>
+    <trig_name>Row Selected</trig_name>
+    <action>Save Template</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>7</trig_order>
+    <enable_ind>N</enable_ind>
+  </triggers>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>0</sequence>
+    <table_name>order_</table_name>
+    <field_name>actStatus</field_name>
+    <column_width>100</column_width>
+    <column_header>Status</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>1</sequence>
+    <table_name>order_</table_name>
+    <field_name>orderedDate</field_name>
+    <column_width>65</column_width>
+    <column_header>Ordered</column_header>
+    <field_type>Date</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>2</sequence>
+    <table_name>order_</table_name>
+    <field_name>completedDate</field_name>
+    <column_width>72</column_width>
+    <column_header>Completed</column_header>
+    <field_type>Date</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>3</sequence>
+    <table_name>order_</table_name>
+    <field_name>actTextDisplay</field_name>
+    <column_width>322</column_width>
+    <column_header>Order</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>4</sequence>
+    <table_name>order_</table_name>
+    <field_name>orderedBy</field_name>
+    <column_width>150</column_width>
+    <column_header>Ordered By</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>5</sequence>
+    <table_name>order_</table_name>
+    <field_name>actComments</field_name>
+    <column_width>250</column_width>
+    <column_header>Comments</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>6</sequence>
+    <table_name>order_</table_name>
+    <field_name>completedBy</field_name>
+    <column_width>150</column_width>
+    <column_header>CompletedBy</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>7</sequence>
+    <table_name>order_</table_name>
+    <field_name>actCode</field_name>
+    <column_width>55</column_width>
+    <column_header>CPT</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>8</sequence>
+    <table_name>order_</table_name>
+    <field_name>obsInterpretation</field_name>
+    <column_width>120</column_width>
+    <column_header>Interpretation</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>9</sequence>
+    <table_name>order_</table_name>
+    <field_name>obsValue</field_name>
+    <column_width>417</column_width>
+    <column_header>Result / Report</column_header>
+    <field_type>Memo</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>10</sequence>
+    <table_name>order_</table_name>
+    <field_name>txt_auth_obtained_date</field_name>
+    <column_width>65</column_width>
+    <column_header>Auth Date</column_header>
+    <field_type>Date</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>11</sequence>
+    <table_name>order_</table_name>
+    <field_name>txt_auth_number</field_name>
+    <column_width>160</column_width>
+    <column_header>Auth #</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>12</sequence>
+    <table_name>order_</table_name>
+    <field_name>actEffectiveDate</field_name>
+    <column_width>65</column_width>
+    <column_header>Eff. Date</column_header>
+    <field_type>Date</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>13</sequence>
+    <table_name>order_</table_name>
+    <field_name>actExpirationDate</field_name>
+    <column_width>65</column_width>
+    <column_header>Exp. Date</column_header>
+    <field_type>Date</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>14</sequence>
+    <table_name>order_</table_name>
+    <field_name>actRecurTotNum</field_name>
+    <column_width>50</column_width>
+    <column_header># Visits</column_header>
+    <field_type>Numeric</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>15</sequence>
+    <table_name>order_</table_name>
+    <field_name>actDiagnosis</field_name>
+    <column_width>350</column_width>
+    <column_header>Diagnosis</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>16</sequence>
+    <table_name>order_</table_name>
+    <field_name>actDiagnosisCode</field_name>
+    <column_width>60</column_width>
+    <column_header>DX Code</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>17</sequence>
+    <table_name>order_</table_name>
+    <field_name>order_multi_dx_ind</field_name>
+    <column_width>0</column_width>
+    <column_header>Multiple Dx</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>18</sequence>
+    <table_name>order_</table_name>
+    <field_name>actTextDispDoc</field_name>
+    <column_width>250</column_width>
+    <column_header>Additional info</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>19</sequence>
+    <table_name>order_</table_name>
+    <field_name>apptDate</field_name>
+    <column_width>65</column_width>
+    <column_header>Appt Date</column_header>
+    <field_type>Date</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>20</sequence>
+    <table_name>order_</table_name>
+    <field_name>apptTime</field_name>
+    <column_width>75</column_width>
+    <column_header>Appt Time</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>21</sequence>
+    <table_name>order_</table_name>
+    <field_name>apptTimeframeDisp</field_name>
+    <column_width>100</column_width>
+    <column_header>Appt Timeframe</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>22</sequence>
+    <table_name>order_</table_name>
+    <field_name>apptLocation</field_name>
+    <column_width>150</column_width>
+    <column_header>Appt Location</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>23</sequence>
+    <table_name>order_</table_name>
+    <field_name>actReasonCode</field_name>
+    <column_width>150</column_width>
+    <column_header>Reason</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>24</sequence>
+    <table_name>order_</table_name>
+    <field_name>actDescription</field_name>
+    <column_width>250</column_width>
+    <column_header>Description</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>25</sequence>
+    <table_name>order_</table_name>
+    <field_name>education</field_name>
+    <column_width>25</column_width>
+    <column_header>Ed.</column_header>
+    <field_type>Numeric</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>26</sequence>
+    <table_name>order_</table_name>
+    <field_name>orderedReason</field_name>
+    <column_width>135</column_width>
+    <column_header>             *</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>27</sequence>
+    <table_name>order_</table_name>
+    <field_name>educationMaterials</field_name>
+    <column_width>225</column_width>
+    <column_header>Instructions</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>28</sequence>
+    <table_name>order_</table_name>
+    <field_name>supplyQuantity</field_name>
+    <column_width>25</column_width>
+    <column_header>#</column_header>
+    <field_type>Numeric</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>29</sequence>
+    <table_name>order_</table_name>
+    <field_name>locationName</field_name>
+    <column_width>175</column_width>
+    <column_header>Location Name</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>30</sequence>
+    <table_name>order_</table_name>
+    <field_name>txt_auth_obtained_by</field_name>
+    <column_width>135</column_width>
+    <column_header>Auth Obtained By</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>31</sequence>
+    <table_name>order_</table_name>
+    <field_name>encounterID</field_name>
+    <column_width>0</column_width>
+    <column_header>Encounter ID</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>32</sequence>
+    <table_name>order_</table_name>
+    <field_name>apptAMPM</field_name>
+    <column_width>0</column_width>
+    <column_header>*</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>33</sequence>
+    <table_name>order_</table_name>
+    <field_name>apptHour</field_name>
+    <column_width>0</column_width>
+    <column_header>*</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>34</sequence>
+    <table_name>order_</table_name>
+    <field_name>apptMin</field_name>
+    <column_width>0</column_width>
+    <column_header>*</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>35</sequence>
+    <table_name>order_</table_name>
+    <field_name>actText</field_name>
+    <column_width>0</column_width>
+    <column_header>*</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>36</sequence>
+    <table_name>order_</table_name>
+    <field_name>actClass</field_name>
+    <column_width>0</column_width>
+    <column_header>ActClass</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>37</sequence>
+    <table_name>order_</table_name>
+    <field_name>actSubClass</field_name>
+    <column_width>0</column_width>
+    <column_header>ActSubClass</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>38</sequence>
+    <table_name>order_</table_name>
+    <field_name>code_system</field_name>
+    <column_width>0</column_width>
+    <column_header>Code System</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>39</sequence>
+    <table_name>order_</table_name>
+    <field_name>code_value</field_name>
+    <column_width>0</column_width>
+    <column_header>Code Value</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>40</sequence>
+    <table_name>order_</table_name>
+    <field_name>tzds_completed_dt_time</field_name>
+    <column_width>0</column_width>
+    <column_header>Tzds Completed Dt Time</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_items>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <sequence>41</sequence>
+    <table_name>order_</table_name>
+    <field_name>tzds_ordered_dt_time</field_name>
+    <column_width>0</column_width>
+    <column_header>Tzds Ordered Dt Time</column_header>
+    <field_type>Text</field_type>
+    <column_mask />
+    <sort_date_ind>N</sort_date_ind>
+  </summary_items>
+  <summary_xref>
+    <control_name>srx_mng_office_px_dm</control_name>
+    <custom_filter>ISNULL(actMood, "ORD")&lt;&gt;"RMD" AND (order_.actClass="PROC" OR order_.actClass="MPORT" OR order_.actClass="OTHER" OR order_.actClass="MEDSUPPLY" OR order_.actClass="INJ" OR order_.actClass="PPD" OR  order_.actClass="PAP" OR order_.actClass="WETMOUNT"  OR   order_.actClass="EKG"  OR order_.actClass="MED" OR order_.actClass="CONTRACEPT"  OR order_.actClass="RESP" OR order_.actClass="LAB OFFICE" OR order_.actClass="DME" OR order_.actClass="UA" OR order_.actClass="TITER" OR order_.actClass="IVFLUID" OR order_.actClass="GYN" OR order_.actClass="DME RX" OR order_.actClass="GI")   AND order_.actStatus&lt;&gt;"deleted" AND order_.encounterDate={@EN.DT}</custom_filter>
+  </summary_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_step</field_name>
+    <field_value>{srx_mng_office_px_dm_.actStatus}</field_value>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_ordereddate</field_name>
+    <field_value>{srx_mng_office_px_dm_.orderedDate}</field_value>
+    <seq_nbr>1</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_actTxtDisplay</field_name>
+    <field_value>{srx_mng_office_px_dm_.actTextDisplay}</field_value>
+    <seq_nbr>2</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.actCode</field_name>
+    <field_value>{srx_mng_office_px_dm_.actCode}</field_value>
+    <seq_nbr>3</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.actDiagnosis</field_name>
+    <field_value>{srx_mng_office_px_dm_.actDiagnosis}</field_value>
+    <seq_nbr>4</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.actDiagnosisCode</field_name>
+    <field_value>{srx_mng_office_px_dm_.actDiagnosisCode}</field_value>
+    <seq_nbr>5</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.actTextDisplay</field_name>
+    <field_value>{srx_mng_office_px_dm_.actTextDisplay}</field_value>
+    <seq_nbr>6</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.chk_education</field_name>
+    <field_value>{srx_mng_office_px_dm_.education}</field_value>
+    <seq_nbr>7</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.orderedBy</field_name>
+    <field_value>{srx_mng_office_px_dm_.orderedBy}</field_value>
+    <seq_nbr>8</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.orderedDate</field_name>
+    <field_value>{srx_mng_office_px_dm_.orderedDate}</field_value>
+    <seq_nbr>9</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_act_description</field_name>
+    <field_value>{srx_mng_office_px_dm_.actDescription}</field_value>
+    <seq_nbr>10</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_act_effective_date</field_name>
+    <field_value>{srx_mng_office_px_dm_.actEffectiveDate}</field_value>
+    <seq_nbr>11</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_act_expiration_date</field_name>
+    <field_value>{srx_mng_office_px_dm_.actExpirationDate}</field_value>
+    <seq_nbr>12</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_act_reason</field_name>
+    <field_value>{srx_mng_office_px_dm_.actReasonCode}</field_value>
+    <seq_nbr>13</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_act_recur_num</field_name>
+    <field_value>{srx_mng_office_px_dm_.actRecurTotNum}</field_value>
+    <seq_nbr>14</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_act_text_disp_doc</field_name>
+    <field_value>{srx_mng_office_px_dm_.actTextDispDoc}</field_value>
+    <seq_nbr>15</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_appt_date</field_name>
+    <field_value>{srx_mng_office_px_dm_.apptDate}</field_value>
+    <seq_nbr>16</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_appt_location</field_name>
+    <field_value>{srx_mng_office_px_dm_.apptLocation}</field_value>
+    <seq_nbr>17</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_appt_timeframe_display</field_name>
+    <field_value>{srx_mng_office_px_dm_.apptTimeframeDisp}</field_value>
+    <seq_nbr>18</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_auth_number</field_name>
+    <field_value>{srx_mng_office_px_dm_.txt_auth_number}</field_value>
+    <seq_nbr>19</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_auth_obtained_by</field_name>
+    <field_value>{srx_mng_office_px_dm_.txt_auth_obtained_by}</field_value>
+    <seq_nbr>20</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_auth_obtained_date</field_name>
+    <field_value>{srx_mng_office_px_dm_.txt_auth_obtained_date}</field_value>
+    <seq_nbr>21</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_education_materials</field_name>
+    <field_value>{srx_mng_office_px_dm_.educationMaterials}</field_value>
+    <seq_nbr>22</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_location</field_name>
+    <field_value>{srx_mng_office_px_dm_.locationName}</field_value>
+    <seq_nbr>23</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_order_enc_id</field_name>
+    <field_value>{srx_mng_office_px_dm_.encounterID}</field_value>
+    <seq_nbr>24</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_ordered_reason</field_name>
+    <field_value>{srx_mng_office_px_dm_.orderedReason}</field_value>
+    <seq_nbr>25</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.opt_appt_ampm</field_name>
+    <field_value>{srx_mng_office_px_dm_.apptAMPM}</field_value>
+    <seq_nbr>26</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_appt_date</field_name>
+    <field_value>{srx_mng_office_px_dm_.apptDate}</field_value>
+    <seq_nbr>27</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_appt_hour</field_name>
+    <field_value>{srx_mng_office_px_dm_.apptHour}</field_value>
+    <seq_nbr>28</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_appt_min</field_name>
+    <field_value>{srx_mng_office_px_dm_.apptMin}</field_value>
+    <seq_nbr>29</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_actclass</field_name>
+    <field_value>{srx_mng_office_px_dm_.actClass}</field_value>
+    <seq_nbr>30</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_actsubclass</field_name>
+    <field_value>{srx_mng_office_px_dm_.actSubClass}</field_value>
+    <seq_nbr>31</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>referrals_order_.txt_order_id</field_name>
+    <field_value>""</field_value>
+    <seq_nbr>32</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_order_enc_id</field_name>
+    <field_value>{srx_mng_office_px_dm_.encounterID}</field_value>
+    <seq_nbr>33</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_action</field_name>
+    <field_value>""</field_value>
+    <seq_nbr>34</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>local.code_system</field_name>
+    <field_value>{srx_mng_office_px_dm_.code_system}</field_value>
+    <seq_nbr>35</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>local.code_value</field_name>
+    <field_value>{srx_mng_office_px_dm_.code_value}</field_value>
+    <seq_nbr>36</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>ee4d6f8a-d1bb-4c69-bcf8-0545850e3d29</trig_id>
+    <field_name>order_management_.txt_appt_location</field_name>
+    <field_value>{srx_mng_office_px_dm_.apptLocation}</field_value>
+    <seq_nbr>37</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>52e53fee-9ab0-4eaa-9064-08e0ac7434d1</trig_id>
+    <field_name>local.code_system</field_name>
+    <field_value>"LOINC"</field_value>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>52e53fee-9ab0-4eaa-9064-08e0ac7434d1</trig_id>
+    <field_name>local.code_value</field_name>
+    <field_value>"2335-8"</field_value>
+    <seq_nbr>1</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>212ab5bf-e55d-439a-b527-2078460af58e</trig_id>
+    <field_name>@pv_seq_no</field_name>
+    <field_value>{ROWID(srx_mng_office_px_dm)}</field_value>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>212ab5bf-e55d-439a-b527-2078460af58e</trig_id>
+    <field_name>local.opt_detail_filter</field_name>
+    <field_value>1</field_value>
+    <seq_nbr>1</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>b0c178d4-2e4c-45d5-bdd9-299ebef7a7b1</trig_id>
+    <field_name>srx_sub_med_.txt_system</field_name>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>b0c178d4-2e4c-45d5-bdd9-299ebef7a7b1</trig_id>
+    <field_name>Label002</field_name>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>b0c178d4-2e4c-45d5-bdd9-299ebef7a7b1</trig_id>
+    <field_name>Button001</field_name>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>b0c178d4-2e4c-45d5-bdd9-299ebef7a7b1</trig_id>
+    <field_name>srx_mng_office_px_dm</field_name>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>b0c178d4-2e4c-45d5-bdd9-299ebef7a7b1</trig_id>
+    <field_name>Label001</field_name>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>a7e40462-99eb-4a2f-9d9e-5f2424e0988d</trig_id>
+    <field_name>lbl_med_not_used</field_name>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>b3981e58-c648-4b49-9062-6881755c1a9f</trig_id>
+    <field_name>@tv_obs_timezone</field_name>
+    <field_value>""</field_value>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>df1da338-deda-414c-a4d2-93646b2b4975</trig_id>
+    <field_name>@pv_seq_no</field_name>
+    <field_value>{ROWID( srx_mng_office_px_dm )}</field_value>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>b2267bbb-3613-46b1-a262-9f3a6a2e7392</trig_id>
+    <field_name>@tv_obs_timezone</field_name>
+    <field_value>{srx_mng_office_px_dm_.tzds_ordered_dt_time}</field_value>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>848d1ac4-3069-43a9-bfda-a06be25c2fac</trig_id>
+    <field_name>referrals_order_.txt_order_id</field_name>
+    <field_value>{ROWID(srx_mng_office_px_dm )}</field_value>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>6d04e3f7-6cc6-4d59-89ec-d5864f5a680f</trig_id>
+    <field_name>local.opt_show_hide_edit</field_name>
+    <field_value>{local.opt_show_hide_edit} + 1</field_value>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <note_assign_xref>
+    <trig_id>30d2af3f-f7e0-456e-9b89-9a3a54a9f90d</trig_id>
+    <concat_value>{srx_mng_office_px_dm_.actComments}</concat_value>
+    <eval_ind>N</eval_ind>
+    <seq_nbr>0</seq_nbr>
+  </note_assign_xref>
+  <template_variables>
+    <template_id>6934</template_id>
+    <name>@tv_obs_timezone</name>
+    <type>Text</type>
+    <variable_scope>Template</variable_scope>
+    <style>Normal</style>
+    <public_ind>N</public_ind>
+  </template_variables>
+</srx_sub_med>
