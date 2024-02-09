@@ -3266,9 +3266,9 @@
     <created_by>1202</created_by>
     <modified_by>1202</modified_by>
     <perm_pos>7020</perm_pos>
-    <button_count>4</button_count>
+    <button_count>12</button_count>
     <create_timestamp>2023-11-20T18:56:58+00:00</create_timestamp>
-    <modify_timestamp>2024-02-06T17:50:09+00:00</modify_timestamp>
+    <modify_timestamp>2024-02-09T19:29:47+00:00</modify_timestamp>
     <def_font_face>Segoe UI</def_font_face>
     <def_font_size>8</def_font_size>
     <def_font_bold_ind>N</def_font_bold_ind>
@@ -3279,12 +3279,12 @@
     <width>1028</width>
     <height>770</height>
     <encsheet_count>0</encsheet_count>
-    <image_count>0</image_count>
+    <image_count>1</image_count>
     <ex_style>2</ex_style>
     <color_depth>0</color_depth>
     <page_count>0</page_count>
     <template_display_name>SRX Administration</template_display_name>
-    <cache_timestamp>2024-02-08T22:40:46.447+00:00</cache_timestamp>
+    <cache_timestamp>2024-02-09T19:29:47+00:00</cache_timestamp>
     <alias_ind>N</alias_ind>
     <kbm_ind>N</kbm_ind>
     <hash_value>48-3F-53-12-6E-F2-93-63-B5-02-F4-EF-AE-35-FE-69-20-5F-25-52</hash_value>
@@ -6577,6 +6577,37 @@ mycin</default_value>
   </template_fields>
   <template_fields>
     <table_name>SRX_Config_</table_name>
+    <field_name>opt_browser</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>160</tab_order>
+    <posx>1410</posx>
+    <posy>770</posy>
+    <width>8</width>
+    <height>18</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <justification>0</justification>
+    <err_prompt>|</err_prompt>
+    <message_line>|</message_line>
+    <modifiable_ind>N</modifiable_ind>
+    <required_ind>N</required_ind>
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>SRX_Config_</table_name>
     <field_name>opt_system</field_name>
     <field_type>Numeric</field_type>
     <field_length>0</field_length>
@@ -6771,6 +6802,37 @@ mycin</default_value>
     <posx>1310</posx>
     <posy>742</posy>
     <width>40</width>
+    <height>18</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <justification>0</justification>
+    <err_prompt>|</err_prompt>
+    <message_line>|</message_line>
+    <modifiable_ind>N</modifiable_ind>
+    <required_ind>N</required_ind>
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>SRX_Config_</table_name>
+    <field_name>txt_vis_path</field_name>
+    <field_type>Text</field_type>
+    <field_length>500</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>159</tab_order>
+    <posx>1300</posx>
+    <posy>770</posy>
+    <width>80</width>
     <height>18</height>
     <field_style>0</field_style>
     <font_name>Segoe UI</font_name>
@@ -14307,6 +14369,18 @@ mycin</default_value>
   </fields_master>
   <fields_master>
     <table_name>SRX_Config_</table_name>
+    <field_name>opt_browser</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>SRX_Config_</table_name>
     <field_name>opt_system</field_name>
     <field_type>Numeric</field_type>
     <field_length>0</field_length>
@@ -14370,6 +14444,18 @@ mycin</default_value>
     <field_name>txt_multi_dept_ind</field_name>
     <field_type>Text</field_type>
     <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>SRX_Config_</table_name>
+    <field_name>txt_vis_path</field_name>
+    <field_type>Text</field_type>
+    <field_length>500</field_length>
     <demographics_ind>N</demographics_ind>
     <encounters_ind>N</encounters_ind>
     <medical_records_ind>N</medical_records_ind>
@@ -16450,7 +16536,7 @@ mycin</default_value>
     <action>Launch Application</action>
     <trig_seq_no>0</trig_seq_no>
     <trig_order>8</trig_order>
-    <condition>{srx_vaccine_admin_.txt_vis_path}!=""</condition>
+    <condition>{srx_vaccine_admin_.txt_vis_path}!="" &amp; {SRX_Config_.opt_browser}="G"</condition>
     <parm1>chrome.exe</parm1>
     <parm2>C:\Program Files (x86)\Google\Chrome\Application\|{srx_vaccine_admin_.txt_vis_path}</parm2>
     <enable_ind>Y</enable_ind>
@@ -16461,6 +16547,17 @@ mycin</default_value>
     <action>Launch Application</action>
     <trig_seq_no>0</trig_seq_no>
     <trig_order>9</trig_order>
+    <condition>{srx_vaccine_admin_.txt_vis_path}!="" &amp; {SRX_Config_.opt_browser}="E"</condition>
+    <parm1>msedge.exe</parm1>
+    <parm2>C:\Program Files (x86)\Microsoft\Edge\Application\|{srx_vaccine_admin_.txt_vis_path}</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_print_vis</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Launch Application</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>10</trig_order>
     <parm1>srxcpy.exe</parm1>
     <parm2>C:\Program Files\SRX_Util\|{srx_vaccine_admin_.txt_vis_pdf_file_conct}</parm2>
     <enable_ind>Y</enable_ind>
@@ -24660,7 +24757,7 @@ END</text>
   <trig_mf_xref>
     <trig_id>c0bf7d8d-e54e-4614-b760-5189d5bedc46</trig_id>
     <field_name>srx_vaccine_admin_.txt_vis_path</field_name>
-    <field_value>{CONCAT( "\" , "", FALSE , "\\NG-IMAGE-ROOT\NextGenRoot\Test\EMR\Reports\VIS",{srx_vaccine_admin_.txt_vis_pdf_name} )}</field_value>
+    <field_value>{CONCAT( "\" , "", FALSE , {SRX_Config_.txt_vis_path},{srx_vaccine_admin_.txt_vis_pdf_name} )}</field_value>
     <seq_nbr>0</seq_nbr>
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
