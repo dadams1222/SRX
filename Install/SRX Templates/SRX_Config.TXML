@@ -3262,6 +3262,28 @@
                     </xs:restriction>
                   </xs:simpleType>
                 </xs:element>
+                <xs:element name="txt_edge_path" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="250" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="txt_chrome_path" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="250" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="txt_srx_util_path" minOccurs="0">
+                  <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                      <xs:maxLength value="250" />
+                    </xs:restriction>
+                  </xs:simpleType>
+                </xs:element>
+                <xs:element name="opt_interface" type="xs:int" minOccurs="0" />
               </xs:sequence>
             </xs:complexType>
           </xs:element>
@@ -3351,14 +3373,14 @@
     <template_id>6929</template_id>
     <template_name>SRX_Config</template_name>
     <template_type>practice</template_type>
-    <label_count>49</label_count>
+    <label_count>55</label_count>
     <back_color>226,243,224</back_color>
     <created_by>1202</created_by>
     <modified_by>1202</modified_by>
     <perm_pos>7024</perm_pos>
     <button_count>10</button_count>
     <create_timestamp>2023-12-29T00:29:11+00:00</create_timestamp>
-    <modify_timestamp>2024-02-09T19:19:54+00:00</modify_timestamp>
+    <modify_timestamp>2024-02-12T19:06:28+00:00</modify_timestamp>
     <def_font_face>Segoe UI</def_font_face>
     <def_font_size>8</def_font_size>
     <def_font_bold_ind>N</def_font_bold_ind>
@@ -3374,7 +3396,7 @@
     <color_depth>0</color_depth>
     <page_count>0</page_count>
     <template_display_name>SRX Trinet Configuration</template_display_name>
-    <cache_timestamp>2024-02-09T19:19:54+00:00</cache_timestamp>
+    <cache_timestamp>2024-02-12T19:06:28+00:00</cache_timestamp>
     <alias_template>ngkbm_configure_consent</alias_template>
     <alias_ind>N</alias_ind>
     <kbm_ind>N</kbm_ind>
@@ -3405,7 +3427,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>2</tab_order>
     <posx>490</posx>
-    <posy>412</posy>
+    <posy>509</posy>
     <width>58</width>
     <height>22</height>
     <field_style>0</field_style>
@@ -3439,7 +3461,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>8</tab_order>
     <posx>553</posx>
-    <posy>412</posy>
+    <posy>509</posy>
     <width>76</width>
     <height>22</height>
     <field_style>0</field_style>
@@ -3473,7 +3495,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>9</tab_order>
     <posx>824</posx>
-    <posy>798</posy>
+    <posy>895</posy>
     <width>76</width>
     <height>24</height>
     <field_style>0</field_style>
@@ -3507,7 +3529,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>48</tab_order>
     <posx>824</posx>
-    <posy>1300</posy>
+    <posy>1397</posy>
     <width>76</width>
     <height>24</height>
     <field_style>0</field_style>
@@ -3541,7 +3563,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>10</tab_order>
     <posx>633</posx>
-    <posy>412</posy>
+    <posy>509</posy>
     <width>60</width>
     <height>22</height>
     <field_style>0</field_style>
@@ -3607,7 +3629,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>52</tab_order>
     <posx>656</posx>
-    <posy>912</posy>
+    <posy>1009</posy>
     <width>76</width>
     <height>22</height>
     <field_style>0</field_style>
@@ -3641,7 +3663,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>53</tab_order>
     <posx>736</posx>
-    <posy>912</posy>
+    <posy>1009</posy>
     <width>60</width>
     <height>22</height>
     <field_style>0</field_style>
@@ -3675,7 +3697,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>54</tab_order>
     <posx>593</posx>
-    <posy>912</posy>
+    <posy>1009</posy>
     <width>58</width>
     <height>22</height>
     <field_style>0</field_style>
@@ -3770,7 +3792,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>4</tab_order>
     <posx>20</posx>
-    <posy>400</posy>
+    <posy>497</posy>
     <width>53</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -3801,7 +3823,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>5</tab_order>
     <posx>20</posx>
-    <posy>272</posy>
+    <posy>365</posy>
     <width>253</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -3832,7 +3854,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>6</tab_order>
     <posx>230</posx>
-    <posy>400</posy>
+    <posy>497</posy>
     <width>104</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -3863,7 +3885,7 @@
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>7</tab_order>
     <posx>20</posx>
-    <posy>288</posy>
+    <posy>381</posy>
     <width>415</width>
     <height>28</height>
     <field_style>0</field_style>
@@ -3925,7 +3947,7 @@ continue configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>17</tab_order>
     <posx>20</posx>
-    <posy>263</posy>
+    <posy>356</posy>
     <width>1009</width>
     <height>1</height>
     <field_style>8388608</field_style>
@@ -3957,7 +3979,7 @@ continue configuration below.</default_value>
     <posx>486</posx>
     <posy>57</posy>
     <width>1</width>
-    <height>293</height>
+    <height>391</height>
     <field_style>8388608</field_style>
     <font_name>Arial</font_name>
     <font_bold_ind>N</font_bold_ind>
@@ -4015,7 +4037,7 @@ continue configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>24</tab_order>
     <posx>20</posx>
-    <posy>357</posy>
+    <posy>454</posy>
     <width>107</width>
     <height>17</height>
     <field_style>0</field_style>
@@ -4046,7 +4068,7 @@ continue configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>57</tab_order>
     <posx>20</posx>
-    <posy>801</posy>
+    <posy>898</posy>
     <width>313</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -4295,7 +4317,7 @@ in addition to "Administer")</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>39</tab_order>
     <posx>430</posx>
-    <posy>400</posy>
+    <posy>497</posy>
     <width>50</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -4326,7 +4348,7 @@ in addition to "Administer")</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>43</tab_order>
     <posx>20</posx>
-    <posy>384</posy>
+    <posy>481</posy>
     <width>334</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -4357,7 +4379,7 @@ in addition to "Administer")</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>42</tab_order>
     <posx>20</posx>
-    <posy>853</posy>
+    <posy>950</posy>
     <width>247</width>
     <height>17</height>
     <field_style>0</field_style>
@@ -4388,7 +4410,7 @@ in addition to "Administer")</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>44</tab_order>
     <posx>282</posx>
-    <posy>900</posy>
+    <posy>997</posy>
     <width>190</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -4419,7 +4441,7 @@ in addition to "Administer")</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>45</tab_order>
     <posx>20</posx>
-    <posy>884</posy>
+    <posy>981</posy>
     <width>788</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -4450,7 +4472,7 @@ in addition to "Administer")</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>46</tab_order>
     <posx>20</posx>
-    <posy>900</posy>
+    <posy>997</posy>
     <width>226</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -4481,7 +4503,7 @@ in addition to "Administer")</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>55</tab_order>
     <posx>1080</posx>
-    <posy>751</posy>
+    <posy>848</posy>
     <width>67</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -4511,7 +4533,7 @@ in addition to "Administer")</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>58</tab_order>
     <posx>20</posx>
-    <posy>1304</posy>
+    <posy>1401</posy>
     <width>313</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -4542,7 +4564,7 @@ in addition to "Administer")</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>61</tab_order>
     <posx>20</posx>
-    <posy>316</posy>
+    <posy>409</posy>
     <width>442</width>
     <height>28</height>
     <field_style>0</field_style>
@@ -4663,8 +4685,8 @@ Setup" box and continue with configuration below.</default_value>
     <field_name>Label049</field_name>
     <field_type>label</field_type>
     <field_length>0</field_length>
-    <tabstop_ind>N</tabstop_ind>
-    <tab_order>-1</tab_order>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>71</tab_order>
     <posx>20</posx>
     <posy>239</posy>
     <width>117</width>
@@ -4688,6 +4710,191 @@ Setup" box and continue with configuration below.</default_value>
     <panel_name>pnl_config</panel_name>
     <public_ind>N</public_ind>
     <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name />
+    <field_name>Label050</field_name>
+    <field_type>label</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>72</tab_order>
+    <posx>20</posx>
+    <posy>262</posy>
+    <width>152</width>
+    <height>13</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>226,243,224</back_color_normal>
+    <default_value>Browser application file path:</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name />
+    <field_name>Label051</field_name>
+    <field_type>label</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>73</tab_order>
+    <posx>20</posx>
+    <posy>282</posy>
+    <width>116</width>
+    <height>13</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>226,243,224</back_color_normal>
+    <default_value>SRX Utility folder path:</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name />
+    <field_name>Label052</field_name>
+    <field_type>label</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>N</tabstop_ind>
+    <tab_order>-1</tab_order>
+    <posx>20</posx>
+    <posy>307</posy>
+    <width>1009</width>
+    <height>1</height>
+    <field_style>8388608</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>226,243,224</back_color_normal>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name />
+    <field_name>Label053</field_name>
+    <field_type>label</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>74</tab_order>
+    <posx>20</posx>
+    <posy>312</posy>
+    <width>93</width>
+    <height>13</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>Y</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>226,243,224</back_color_normal>
+    <default_value>Interface Settings:</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name />
+    <field_name>Label054</field_name>
+    <field_type>label</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>75</tab_order>
+    <posx>20</posx>
+    <posy>332</posy>
+    <width>145</width>
+    <height>13</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>226,243,224</back_color_normal>
+    <default_value>Submit to interface settings:</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name />
+    <field_name>Label055</field_name>
+    <field_type>label</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>78</tab_order>
+    <posx>180</posx>
+    <posy>332</posy>
+    <width>255</width>
+    <height>13</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>Y</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>226,243,224</back_color_normal>
+    <default_value>(Set to No for NON-PROD environment, otherwise Yes)</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as />
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
   </template_fields>
   <template_fields>
     <table_name />
@@ -4727,7 +4934,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>1</tab_order>
     <posx>0</posx>
-    <posy>353</posy>
+    <posy>450</posy>
     <width>1038</width>
     <height>495</height>
     <field_style>2</field_style>
@@ -4757,7 +4964,7 @@ Setup" box and continue with configuration below.</default_value>
     <posx>0</posx>
     <posy>30</posy>
     <width>1038</width>
-    <height>322</height>
+    <height>419</height>
     <field_style>3</field_style>
     <font_name>Arial</font_name>
     <font_bold_ind>N</font_bold_ind>
@@ -4783,7 +4990,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>41</tab_order>
     <posx>0</posx>
-    <posy>849</posy>
+    <posy>946</posy>
     <width>1038</width>
     <height>521</height>
     <field_style>2</field_style>
@@ -4842,7 +5049,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>21</tab_order>
     <posx>230</posx>
-    <posy>415</posy>
+    <posy>512</posy>
     <width>200</width>
     <height>18</height>
     <field_style>0</field_style>
@@ -4874,7 +5081,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>38</tab_order>
     <posx>430</posx>
-    <posy>415</posy>
+    <posy>512</posy>
     <width>40</width>
     <height>18</height>
     <field_style>0</field_style>
@@ -4906,7 +5113,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>22</tab_order>
     <posx>550</posx>
-    <posy>390</posy>
+    <posy>487</posy>
     <width>8</width>
     <height>18</height>
     <field_style>0</field_style>
@@ -4938,7 +5145,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>20</tab_order>
     <posx>20</posx>
-    <posy>415</posy>
+    <posy>512</posy>
     <width>208</width>
     <height>18</height>
     <field_style>0</field_style>
@@ -4970,7 +5177,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>49</tab_order>
     <posx>20</posx>
-    <posy>914</posy>
+    <posy>1011</posy>
     <width>261</width>
     <height>18</height>
     <field_style>0</field_style>
@@ -5002,7 +5209,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>56</tab_order>
     <posx>800</posx>
-    <posy>914</posy>
+    <posy>1011</posy>
     <width>8</width>
     <height>18</height>
     <field_style>0</field_style>
@@ -5034,7 +5241,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>51</tab_order>
     <posx>1080</posx>
-    <posy>765</posy>
+    <posy>862</posy>
     <width>150</width>
     <height>18</height>
     <field_style>0</field_style>
@@ -5065,7 +5272,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>50</tab_order>
     <posx>282</posx>
-    <posy>914</posy>
+    <posy>1011</posy>
     <width>261</width>
     <height>18</height>
     <field_style>0</field_style>
@@ -5097,7 +5304,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>23</tab_order>
     <posx>20</posx>
-    <posy>436</posy>
+    <posy>533</posy>
     <width>970</width>
     <height>359</height>
     <field_style>8</field_style>
@@ -5132,7 +5339,7 @@ Setup" box and continue with configuration below.</default_value>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>47</tab_order>
     <posx>20</posx>
-    <posy>937</posy>
+    <posy>1034</posy>
     <width>970</width>
     <height>359</height>
     <field_style>8</field_style>
@@ -5166,8 +5373,8 @@ Setup" box and continue with configuration below.</default_value>
     <field_length>0</field_length>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>19</tab_order>
-    <posx>516</posx>
-    <posy>288</posy>
+    <posx>498</posx>
+    <posy>381</posy>
     <width>125</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -5199,8 +5406,8 @@ Setup" box and continue with configuration below.</default_value>
     <field_length>0</field_length>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>40</tab_order>
-    <posx>516</posx>
-    <posy>316</posy>
+    <posx>498</posx>
+    <posy>409</posy>
     <width>234</width>
     <height>13</height>
     <field_style>0</field_style>
@@ -5232,7 +5439,7 @@ Setup" box and continue with configuration below.</default_value>
     <field_length>1</field_length>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>36</tab_order>
-    <posx>516</posx>
+    <posx>498</posx>
     <posy>156</posy>
     <width>73</width>
     <height>13</height>
@@ -5264,7 +5471,7 @@ Setup" box and continue with configuration below.</default_value>
     <field_length>1</field_length>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>37</tab_order>
-    <posx>624</posx>
+    <posx>606</posx>
     <posy>156</posy>
     <width>60</width>
     <height>13</height>
@@ -5296,7 +5503,7 @@ Setup" box and continue with configuration below.</default_value>
     <field_length>1</field_length>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>66</tab_order>
-    <posx>516</posx>
+    <posx>498</posx>
     <posy>239</posy>
     <width>99</width>
     <height>13</height>
@@ -5328,7 +5535,7 @@ Setup" box and continue with configuration below.</default_value>
     <field_length>1</field_length>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>67</tab_order>
-    <posx>624</posx>
+    <posx>606</posx>
     <posy>239</posy>
     <width>59</width>
     <height>12</height>
@@ -5352,6 +5559,70 @@ Setup" box and continue with configuration below.</default_value>
     <panel_name>pnl_config</panel_name>
     <public_ind>N</public_ind>
     <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>SRX_Config_</table_name>
+    <field_name>opt_interface</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>76</tab_order>
+    <posx>500</posx>
+    <posy>332</posy>
+    <width>37</width>
+    <height>13</height>
+    <field_style>256</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>18</fore_color_normal>
+    <picture>Yes</picture>
+    <default_value>2</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as>RadioButton</display_as>
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>SRX_Config_</table_name>
+    <field_name>opt_interface</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>77</tab_order>
+    <posx>606</posx>
+    <posy>332</posy>
+    <width>36</width>
+    <height>13</height>
+    <field_style>256</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>18</fore_color_normal>
+    <picture>No</picture>
+    <default_value>1</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as>RadioButton</display_as>
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
   </template_fields>
   <template_fields>
     <table_name>SRX_Config_</table_name>
@@ -5453,7 +5724,7 @@ Setup" box and continue with configuration below.</default_value>
     <field_length>25</field_length>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>27</tab_order>
-    <posx>516</posx>
+    <posx>498</posx>
     <posy>77</posy>
     <width>150</width>
     <height>18</height>
@@ -5485,7 +5756,7 @@ Setup" box and continue with configuration below.</default_value>
     <field_length>100</field_length>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>28</tab_order>
-    <posx>516</posx>
+    <posx>498</posx>
     <posy>97</posy>
     <width>500</width>
     <height>18</height>
@@ -5517,8 +5788,104 @@ Setup" box and continue with configuration below.</default_value>
     <field_length>1000</field_length>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>29</tab_order>
-    <posx>516</posx>
+    <posx>498</posx>
     <posy>117</posy>
+    <width>500</width>
+    <height>18</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <justification>0</justification>
+    <err_prompt>|</err_prompt>
+    <message_line>|</message_line>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>N</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>SRX_Config_</table_name>
+    <field_name>txt_chrome_path</field_name>
+    <field_type>Text</field_type>
+    <field_length>250</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>68</tab_order>
+    <posx>498</posx>
+    <posy>260</posy>
+    <width>500</width>
+    <height>18</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <justification>0</justification>
+    <err_prompt>|</err_prompt>
+    <message_line>|</message_line>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>SRX_Config_</table_name>
+    <field_name>txt_edge_path</field_name>
+    <field_type>Text</field_type>
+    <field_length>250</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>69</tab_order>
+    <posx>498</posx>
+    <posy>260</posy>
+    <width>500</width>
+    <height>18</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <justification>0</justification>
+    <err_prompt>|</err_prompt>
+    <message_line>|</message_line>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <panel_name>pnl_config</panel_name>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>SRX_Config_</table_name>
+    <field_name>txt_srx_util_path</field_name>
+    <field_type>Text</field_type>
+    <field_length>250</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>70</tab_order>
+    <posx>498</posx>
+    <posy>280</posy>
     <width>500</width>
     <height>18</height>
     <field_style>0</field_style>
@@ -5549,7 +5916,7 @@ Setup" box and continue with configuration below.</default_value>
     <field_length>500</field_length>
     <tabstop_ind>Y</tabstop_ind>
     <tab_order>62</tab_order>
-    <posx>516</posx>
+    <posx>498</posx>
     <posy>216</posy>
     <width>500</width>
     <height>18</height>
@@ -5636,6 +6003,18 @@ Setup" box and continue with configuration below.</default_value>
   </fields_master>
   <fields_master>
     <table_name>SRX_Config_</table_name>
+    <field_name>opt_interface</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>SRX_Config_</table_name>
     <field_name>opt_system</field_name>
     <field_type>Numeric</field_type>
     <field_length>0</field_length>
@@ -5696,9 +6075,45 @@ Setup" box and continue with configuration below.</default_value>
   </fields_master>
   <fields_master>
     <table_name>SRX_Config_</table_name>
+    <field_name>txt_chrome_path</field_name>
+    <field_type>Text</field_type>
+    <field_length>250</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>SRX_Config_</table_name>
+    <field_name>txt_edge_path</field_name>
+    <field_type>Text</field_type>
+    <field_length>250</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>SRX_Config_</table_name>
     <field_name>txt_multi_dept_ind</field_name>
     <field_type>Text</field_type>
     <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>SRX_Config_</table_name>
+    <field_name>txt_srx_util_path</field_name>
+    <field_type>Text</field_type>
+    <field_length>250</field_length>
     <demographics_ind>N</demographics_ind>
     <encounters_ind>N</encounters_ind>
     <medical_records_ind>N</medical_records_ind>
@@ -6193,6 +6608,55 @@ Setup" box and continue with configuration below.</default_value>
     <enable_ind>Y</enable_ind>
   </triggers>
   <triggers>
+    <field>SRX_Config_.opt_browser</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Hide Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>1</trig_order>
+    <parm2>AF48AFB3-36D5-4105-82A4-9A07620EF094</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>SRX_Config_.opt_browser</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Show Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>2</trig_order>
+    <condition>{@This}="G"</condition>
+    <parm2>638FF310-6BF8-4239-9977-EDD97FB59F5A</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>SRX_Config_.opt_browser</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Show Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>3</trig_order>
+    <condition>{@This}="E"</condition>
+    <parm2>8A3C046C-146F-4747-B9F6-308123BD39D3</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>SRX_Config_.opt_browser</field>
+    <trig_name>Populate</trig_name>
+    <action>Show Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>1</trig_order>
+    <condition>{@This}="E"</condition>
+    <parm2>E8EA2087-743F-4551-B04D-08F288C21DE7</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>SRX_Config_.opt_browser</field>
+    <trig_name>Populate</trig_name>
+    <action>Show Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>2</trig_order>
+    <condition>{@This}="G"</condition>
+    <parm2>D08D5AE2-6CC4-4AF9-A09F-D045AC01CB32</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
     <field>SRX_Config_.SRX_ClientID</field>
     <trig_name>Exit</trig_name>
     <action>Assign Field Value</action>
@@ -6512,140 +6976,140 @@ Setup" box and continue with configuration below.</default_value>
     <sort_date_ind>N</sort_date_ind>
   </summary_items>
   <up_ex_data_xref>
-    <trig_id>12d49076-01ce-47fc-ac12-2cc9efd9e0d9</trig_id>
-    <field>chk_active</field>
-    <field_type>Text</field_type>
-    <input_param>"Y"</input_param>
-    <table_name>srx_addl_settings_ext_</table_name>
-  </up_ex_data_xref>
-  <up_ex_data_xref>
-    <trig_id>12d49076-01ce-47fc-ac12-2cc9efd9e0d9</trig_id>
-    <field>location_id</field>
-    <field_type>Text</field_type>
-    <input_param>{local.txt_location_id}</input_param>
-    <table_name>srx_addl_settings_ext_</table_name>
-  </up_ex_data_xref>
-  <up_ex_data_xref>
-    <trig_id>12d49076-01ce-47fc-ac12-2cc9efd9e0d9</trig_id>
-    <field>location_name</field>
-    <field_type>Text</field_type>
-    <input_param>{local.txt_location_name}</input_param>
-    <table_name>srx_addl_settings_ext_</table_name>
-  </up_ex_data_xref>
-  <up_ex_data_xref>
-    <trig_id>12d49076-01ce-47fc-ac12-2cc9efd9e0d9</trig_id>
-    <field>txt_dept</field>
-    <field_type>Text</field_type>
-    <input_param>{local.txt_dept_flr_rm}</input_param>
-    <table_name>srx_addl_settings_ext_</table_name>
-  </up_ex_data_xref>
-  <up_ex_data_xref>
-    <trig_id>12d49076-01ce-47fc-ac12-2cc9efd9e0d9</trig_id>
-    <field>txt_dept_id</field>
-    <field_type>Numeric</field_type>
-    <input_param>{local.txt_dept_id}</input_param>
-    <table_name>srx_addl_settings_ext_</table_name>
-  </up_ex_data_xref>
-  <up_ex_data_xref>
-    <trig_id>f28a4255-d76a-406a-9263-832777ddb79f</trig_id>
-    <field>chk_active</field>
-    <field_type>Text</field_type>
-    <input_param>"Y"</input_param>
-    <table_name>srx_addl_settings_ext_</table_name>
-  </up_ex_data_xref>
-  <up_ex_data_xref>
-    <trig_id>f28a4255-d76a-406a-9263-832777ddb79f</trig_id>
-    <field>location_id</field>
-    <field_type>Text</field_type>
-    <input_param>{local.txt_location_id}</input_param>
-    <table_name>srx_addl_settings_ext_</table_name>
-  </up_ex_data_xref>
-  <up_ex_data_xref>
-    <trig_id>f28a4255-d76a-406a-9263-832777ddb79f</trig_id>
-    <field>location_name</field>
-    <field_type>Text</field_type>
-    <input_param>{local.txt_location_name}</input_param>
-    <table_name>srx_addl_settings_ext_</table_name>
-  </up_ex_data_xref>
-  <up_ex_data_xref>
-    <trig_id>f28a4255-d76a-406a-9263-832777ddb79f</trig_id>
-    <field>txt_dept</field>
-    <field_type>Text</field_type>
-    <input_param>{local.txt_dept_flr_rm}</input_param>
-    <table_name>srx_addl_settings_ext_</table_name>
-  </up_ex_data_xref>
-  <up_ex_data_xref>
-    <trig_id>f28a4255-d76a-406a-9263-832777ddb79f</trig_id>
-    <field>txt_dept_id</field>
-    <field_type>Numeric</field_type>
-    <input_param>{local.txt_dept_id}</input_param>
-    <table_name>srx_addl_settings_ext_</table_name>
-  </up_ex_data_xref>
-  <up_ex_data_xref>
-    <trig_id>d7873a4a-af6a-4223-933f-d795049b3aab</trig_id>
+    <trig_id>e884942b-b79c-447f-8170-1745f2fbfecb</trig_id>
     <field>chk_active</field>
     <field_type>Text</field_type>
     <input_param>"Y"</input_param>
     <table_name>srx_multi_shared_ext_</table_name>
   </up_ex_data_xref>
   <up_ex_data_xref>
-    <trig_id>d7873a4a-af6a-4223-933f-d795049b3aab</trig_id>
+    <trig_id>e884942b-b79c-447f-8170-1745f2fbfecb</trig_id>
     <field>txt_location_from_id</field>
     <field_type>Text</field_type>
     <input_param>{local.txt_nextgen_location_id}</input_param>
     <table_name>srx_multi_shared_ext_</table_name>
   </up_ex_data_xref>
   <up_ex_data_xref>
-    <trig_id>d7873a4a-af6a-4223-933f-d795049b3aab</trig_id>
+    <trig_id>e884942b-b79c-447f-8170-1745f2fbfecb</trig_id>
     <field>txt_location_from_name</field>
     <field_type>Text</field_type>
     <input_param>{local.txt_nextgen_location}</input_param>
     <table_name>srx_multi_shared_ext_</table_name>
   </up_ex_data_xref>
   <up_ex_data_xref>
-    <trig_id>d7873a4a-af6a-4223-933f-d795049b3aab</trig_id>
+    <trig_id>e884942b-b79c-447f-8170-1745f2fbfecb</trig_id>
     <field>txt_location_to_id</field>
     <field_type>Text</field_type>
     <input_param>{local.txt_trinet_loc_id}</input_param>
     <table_name>srx_multi_shared_ext_</table_name>
   </up_ex_data_xref>
   <up_ex_data_xref>
-    <trig_id>d7873a4a-af6a-4223-933f-d795049b3aab</trig_id>
+    <trig_id>e884942b-b79c-447f-8170-1745f2fbfecb</trig_id>
     <field>txt_location_to_name</field>
     <field_type>Text</field_type>
     <input_param>{local.txt_trinet_location_name}</input_param>
     <table_name>srx_multi_shared_ext_</table_name>
   </up_ex_data_xref>
   <up_ex_data_xref>
-    <trig_id>e884942b-b79c-447f-8170-1745f2fbfecb</trig_id>
+    <trig_id>12d49076-01ce-47fc-ac12-2cc9efd9e0d9</trig_id>
+    <field>chk_active</field>
+    <field_type>Text</field_type>
+    <input_param>"Y"</input_param>
+    <table_name>srx_addl_settings_ext_</table_name>
+  </up_ex_data_xref>
+  <up_ex_data_xref>
+    <trig_id>12d49076-01ce-47fc-ac12-2cc9efd9e0d9</trig_id>
+    <field>location_id</field>
+    <field_type>Text</field_type>
+    <input_param>{local.txt_location_id}</input_param>
+    <table_name>srx_addl_settings_ext_</table_name>
+  </up_ex_data_xref>
+  <up_ex_data_xref>
+    <trig_id>12d49076-01ce-47fc-ac12-2cc9efd9e0d9</trig_id>
+    <field>location_name</field>
+    <field_type>Text</field_type>
+    <input_param>{local.txt_location_name}</input_param>
+    <table_name>srx_addl_settings_ext_</table_name>
+  </up_ex_data_xref>
+  <up_ex_data_xref>
+    <trig_id>12d49076-01ce-47fc-ac12-2cc9efd9e0d9</trig_id>
+    <field>txt_dept</field>
+    <field_type>Text</field_type>
+    <input_param>{local.txt_dept_flr_rm}</input_param>
+    <table_name>srx_addl_settings_ext_</table_name>
+  </up_ex_data_xref>
+  <up_ex_data_xref>
+    <trig_id>12d49076-01ce-47fc-ac12-2cc9efd9e0d9</trig_id>
+    <field>txt_dept_id</field>
+    <field_type>Numeric</field_type>
+    <input_param>{local.txt_dept_id}</input_param>
+    <table_name>srx_addl_settings_ext_</table_name>
+  </up_ex_data_xref>
+  <up_ex_data_xref>
+    <trig_id>f28a4255-d76a-406a-9263-832777ddb79f</trig_id>
+    <field>chk_active</field>
+    <field_type>Text</field_type>
+    <input_param>"Y"</input_param>
+    <table_name>srx_addl_settings_ext_</table_name>
+  </up_ex_data_xref>
+  <up_ex_data_xref>
+    <trig_id>f28a4255-d76a-406a-9263-832777ddb79f</trig_id>
+    <field>location_id</field>
+    <field_type>Text</field_type>
+    <input_param>{local.txt_location_id}</input_param>
+    <table_name>srx_addl_settings_ext_</table_name>
+  </up_ex_data_xref>
+  <up_ex_data_xref>
+    <trig_id>f28a4255-d76a-406a-9263-832777ddb79f</trig_id>
+    <field>location_name</field>
+    <field_type>Text</field_type>
+    <input_param>{local.txt_location_name}</input_param>
+    <table_name>srx_addl_settings_ext_</table_name>
+  </up_ex_data_xref>
+  <up_ex_data_xref>
+    <trig_id>f28a4255-d76a-406a-9263-832777ddb79f</trig_id>
+    <field>txt_dept</field>
+    <field_type>Text</field_type>
+    <input_param>{local.txt_dept_flr_rm}</input_param>
+    <table_name>srx_addl_settings_ext_</table_name>
+  </up_ex_data_xref>
+  <up_ex_data_xref>
+    <trig_id>f28a4255-d76a-406a-9263-832777ddb79f</trig_id>
+    <field>txt_dept_id</field>
+    <field_type>Numeric</field_type>
+    <input_param>{local.txt_dept_id}</input_param>
+    <table_name>srx_addl_settings_ext_</table_name>
+  </up_ex_data_xref>
+  <up_ex_data_xref>
+    <trig_id>d7873a4a-af6a-4223-933f-d795049b3aab</trig_id>
     <field>chk_active</field>
     <field_type>Text</field_type>
     <input_param>"Y"</input_param>
     <table_name>srx_multi_shared_ext_</table_name>
   </up_ex_data_xref>
   <up_ex_data_xref>
-    <trig_id>e884942b-b79c-447f-8170-1745f2fbfecb</trig_id>
+    <trig_id>d7873a4a-af6a-4223-933f-d795049b3aab</trig_id>
     <field>txt_location_from_id</field>
     <field_type>Text</field_type>
     <input_param>{local.txt_nextgen_location_id}</input_param>
     <table_name>srx_multi_shared_ext_</table_name>
   </up_ex_data_xref>
   <up_ex_data_xref>
-    <trig_id>e884942b-b79c-447f-8170-1745f2fbfecb</trig_id>
+    <trig_id>d7873a4a-af6a-4223-933f-d795049b3aab</trig_id>
     <field>txt_location_from_name</field>
     <field_type>Text</field_type>
     <input_param>{local.txt_nextgen_location}</input_param>
     <table_name>srx_multi_shared_ext_</table_name>
   </up_ex_data_xref>
   <up_ex_data_xref>
-    <trig_id>e884942b-b79c-447f-8170-1745f2fbfecb</trig_id>
+    <trig_id>d7873a4a-af6a-4223-933f-d795049b3aab</trig_id>
     <field>txt_location_to_id</field>
     <field_type>Text</field_type>
     <input_param>{local.txt_trinet_loc_id}</input_param>
     <table_name>srx_multi_shared_ext_</table_name>
   </up_ex_data_xref>
   <up_ex_data_xref>
-    <trig_id>e884942b-b79c-447f-8170-1745f2fbfecb</trig_id>
+    <trig_id>d7873a4a-af6a-4223-933f-d795049b3aab</trig_id>
     <field>txt_location_to_name</field>
     <field_type>Text</field_type>
     <input_param>{local.txt_trinet_location_name}</input_param>
@@ -8159,6 +8623,8 @@ CLOSE objCur
 DEALLOCATE objCur
 END
 
+IF (select ISNULL(opt_interface,0) from SRX_Config_)&gt;1
+BEGIN
 --Send to registry
 IF (Select count(*) from imm_nor n where enc_id = @pi_enc_id)&gt;0
 BEGIN
@@ -8189,6 +8655,7 @@ SELECT NEWID(), @pi_enterprise_id, @pi_practice_id,
 		    FROM intrf_interface_ids i 
 			WHERE i.agent_type in ('Immunization Order Export')
 END
+END
 
 SET @result_message = ''
 IF (select count(*) from patient_procedure where enc_id = @pi_enc_id and delete_ind = 'N')&gt;0
@@ -8197,6 +8664,12 @@ SET @result_message = 'Administered Vaccine codes have been submitted to superbi
 
 </text>
   </stored_procedures>
+  <trig_mf_xref>
+    <trig_id>e8ea2087-743f-4551-b04d-08f288c21de7</trig_id>
+    <field_name>SRX_Config_.txt_edge_path</field_name>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
   <trig_mf_xref>
     <trig_id>d045270b-001c-428e-838a-09cf6c501204</trig_id>
     <field_name>pnl_consent</field_name>
@@ -8278,6 +8751,11 @@ SET @result_message = 'Administered Vaccine codes have been submitted to superbi
     <trig_id>2a14e302-1ea2-490d-af38-2f3b421d38ed</trig_id>
     <field_name>Label025</field_name>
     <field_value>192,192,192|172,46,249</field_value>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>8a3c046c-146f-4747-b9f6-308123bd39d3</trig_id>
+    <field_name>SRX_Config_.txt_edge_path</field_name>
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
@@ -8378,6 +8856,16 @@ SET @result_message = 'Administered Vaccine codes have been submitted to superbi
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
+    <trig_id>af48afb3-36d5-4105-82a4-9a07620ef094</trig_id>
+    <field_name>SRX_Config_.txt_chrome_path</field_name>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>af48afb3-36d5-4105-82a4-9a07620ef094</trig_id>
+    <field_name>SRX_Config_.txt_edge_path</field_name>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
     <trig_id>ab791d73-fe8b-4278-880f-a62ffae4cb53</trig_id>
     <field_name>pnl_multi_shared</field_name>
     <field_value>Expand</field_value>
@@ -8437,6 +8925,12 @@ SET @result_message = 'Administered Vaccine codes have been submitted to superbi
     <field_name>pnl_additional_settings</field_name>
     <field_value>Expand</field_value>
     <seq_nbr>1</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>d08d5ae2-6cc4-4af9-a09f-d045ac01cb32</trig_id>
+    <field_name>SRX_Config_.txt_chrome_path</field_name>
+    <seq_nbr>0</seq_nbr>
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
@@ -8500,6 +8994,11 @@ SET @result_message = 'Administered Vaccine codes have been submitted to superbi
     <field_name>local.txt_dept_id</field_name>
     <field_value>""</field_value>
     <seq_nbr>3</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>638ff310-6bf8-4239-9977-edd97fb59f5a</trig_id>
+    <field_name>SRX_Config_.txt_chrome_path</field_name>
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
@@ -9073,9 +9572,12 @@ SET @result_message = 'Administered Vaccine codes have been submitted to superbi
     <SRX_URL>https://srx.trinetmedical.com/api/GetRxInfo</SRX_URL>
     <opt_billing>A</opt_billing>
     <chk_vacc_module>N</chk_vacc_module>
-    <txt_multi_dept_ind>N</txt_multi_dept_ind>
+    <txt_multi_dept_ind>Y</txt_multi_dept_ind>
     <chk_multi_shared_loc>0</chk_multi_shared_loc>
     <txt_vis_path>\\NG-IMAGE-ROOT\NextGenRoot\Test\EMR\Reports\VIS</txt_vis_path>
     <opt_browser>G</opt_browser>
+    <txt_chrome_path>C:\Program Files (x86)\Google\Chrome\Application\</txt_chrome_path>
+    <txt_srx_util_path>C:\Program Files\SRX_Util</txt_srx_util_path>
+    <opt_interface>1</opt_interface>
   </SRX_Config_>
 </SRX_Config>

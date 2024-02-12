@@ -3268,7 +3268,7 @@
     <perm_pos>7036</perm_pos>
     <button_count>10</button_count>
     <create_timestamp>2024-02-06T00:36:09+00:00</create_timestamp>
-    <modify_timestamp>2024-02-08T22:40:46+00:00</modify_timestamp>
+    <modify_timestamp>2024-02-12T19:02:12+00:00</modify_timestamp>
     <def_font_face>Arial</def_font_face>
     <def_font_size>8</def_font_size>
     <def_font_bold_ind>N</def_font_bold_ind>
@@ -3283,7 +3283,7 @@
     <ex_style>0</ex_style>
     <color_depth>0</color_depth>
     <page_count>0</page_count>
-    <cache_timestamp>2024-02-08T22:40:46+00:00</cache_timestamp>
+    <cache_timestamp>2024-02-12T19:02:12+00:00</cache_timestamp>
     <alias_ind>N</alias_ind>
     <kbm_ind>N</kbm_ind>
     <hash_value>AB-1A-E7-04-15-0E-1B-6D-E5-EC-83-D9-7F-BC-37-2D-C0-D2-0F-38</hash_value>
@@ -3296,11 +3296,19 @@
     <ok_cancel_ind>Y</ok_cancel_ind>
   </templates>
   <tables>
+    <table_name>fts_intake_</table_name>
+    <table_type>medical_records</table_type>
+  </tables>
+  <tables>
     <table_name>Immunization_Rec_</table_name>
     <table_type>medical_records</table_type>
   </tables>
   <tables>
     <table_name>local</table_name>
+    <table_type>practice</table_type>
+  </tables>
+  <tables>
+    <table_name>ngkbm_immunizations_</table_name>
     <table_type>practice</table_type>
   </tables>
   <tables>
@@ -3627,7 +3635,7 @@
     <display_as />
     <description>|</description>
     <bvalidate_ind>N</bvalidate_ind>
-    <bhidden_ind>N</bhidden_ind>
+    <bhidden_ind>Y</bhidden_ind>
     <page_number>0</page_number>
     <ex_style>641</ex_style>
     <public_ind>Y</public_ind>
@@ -5129,6 +5137,37 @@
     <spellcheck_ind>Y</spellcheck_ind>
   </template_fields>
   <template_fields>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_latex_numb</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>110</tab_order>
+    <posx>960</posx>
+    <posy>10</posy>
+    <width>8</width>
+    <height>18</height>
+    <field_style>0</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>9</font_size>
+    <fore_color_normal>18</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <justification>0</justification>
+    <err_prompt>|</err_prompt>
+    <message_line>|</message_line>
+    <modifiable_ind>N</modifiable_ind>
+    <required_ind>N</required_ind>
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
     <table_name>Immunization_Rec_</table_name>
     <field_name>atxt_vaccine_adult</field_name>
     <field_type>Text</field_type>
@@ -5190,6 +5229,121 @@
     <page_number>0</page_number>
     <ex_style>0</ex_style>
     <public_ind>Y</public_ind>
+    <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>Immunization_Rec_</table_name>
+    <field_name>txt_eggallergy_num</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>107</tab_order>
+    <posx>960</posx>
+    <posy>10</posy>
+    <width>8</width>
+    <height>18</height>
+    <field_style>0</field_style>
+    <font_name>Arial</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>192,192,192</back_color_normal>
+    <justification>2</justification>
+    <modifiable_ind>N</modifiable_ind>
+    <required_ind>N</required_ind>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>Immunization_Rec_</table_name>
+    <field_name>txt_gel_allergy_num</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>108</tab_order>
+    <posx>960</posx>
+    <posy>10</posy>
+    <width>8</width>
+    <height>18</height>
+    <field_style>0</field_style>
+    <font_name>Arial</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>192,192,192</back_color_normal>
+    <justification>2</justification>
+    <modifiable_ind>N</modifiable_ind>
+    <required_ind>N</required_ind>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>Immunization_Rec_</table_name>
+    <field_name>txt_neomycin_a_num</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>109</tab_order>
+    <posx>960</posx>
+    <posy>10</posy>
+    <width>8</width>
+    <height>18</height>
+    <field_style>0</field_style>
+    <font_name>Arial</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>192,192,192</back_color_normal>
+    <justification>1</justification>
+    <modifiable_ind>N</modifiable_ind>
+    <required_ind>N</required_ind>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>local</table_name>
+    <field_name>opt_allergies</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>106</tab_order>
+    <posx>690</posx>
+    <posy>30</posy>
+    <width>73</width>
+    <height>12</height>
+    <field_style>256</field_style>
+    <font_name>Arial</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>7</font_size>
+    <fore_color_normal>18</fore_color_normal>
+    <picture>opt_allergies</picture>
+    <default_value>0</default_value>
+    <justification>0</justification>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as>RadioButton</display_as>
+    <description>|</description>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>N</public_ind>
     <spellcheck_ind>N</spellcheck_ind>
   </template_fields>
   <template_fields>
@@ -5594,6 +5748,37 @@
     <ex_style>0</ex_style>
     <public_ind>Y</public_ind>
     <spellcheck_ind>N</spellcheck_ind>
+  </template_fields>
+  <template_fields>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_hepA_no_neomycin</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <tabstop_ind>Y</tabstop_ind>
+    <tab_order>111</tab_order>
+    <posx>920</posx>
+    <posy>30</posy>
+    <width>8</width>
+    <height>18</height>
+    <field_style>3</field_style>
+    <font_name>Segoe UI</font_name>
+    <font_bold_ind>N</font_bold_ind>
+    <font_italic_ind>N</font_italic_ind>
+    <font_size>8</font_size>
+    <fore_color_normal>51,51,51</fore_color_normal>
+    <back_color_normal>255,255,255</back_color_normal>
+    <picture />
+    <default_value>ngkbm_imm_chk_HepA_no_neomycin</default_value>
+    <justification>0</justification>
+    <modifiable_ind>N</modifiable_ind>
+    <required_ind>N</required_ind>
+    <display_as>CheckBox</display_as>
+    <bvalidate_ind>N</bvalidate_ind>
+    <bhidden_ind>Y</bhidden_ind>
+    <page_number>0</page_number>
+    <ex_style>0</ex_style>
+    <public_ind>N</public_ind>
+    <spellcheck_ind>Y</spellcheck_ind>
   </template_fields>
   <template_fields>
     <table_name>srx_sub_vacc</table_name>
@@ -6552,6 +6737,1542 @@
     <public_ind>Y</public_ind>
     <spellcheck_ind>N</spellcheck_ind>
   </template_fields>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_1</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_10</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_11</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_12</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_13</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_14</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_15</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_16</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_17</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_18</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_2</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_3</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_4</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_5</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_6</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_7</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_8</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>atxt_reason_9</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>chk_dont_launch_hpi_template</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>curser_hld</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>hpi_template</field_name>
+    <field_type>Text</field_type>
+    <field_length>55</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>note_detail</field_name>
+    <field_type>Note</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>N</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Note Details</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_hpi_detail</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_load_ros</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_ord_grid_toggle</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_order_count</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>[Local] - Used as a workflow mechanism</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_populate</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_refresh_rfv_dots</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_rfv_sub_menu_selection</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_risk_factor_1</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 1: R = risk1</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_risk_factor_2</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 2: R = risk2</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_risk_factor_3</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 3: R = risk3</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_risk_factor_4</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 4: R = risk4</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_risk_factor_5</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 5: R = risk5</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_risk_factor_6</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 6: X = risk6</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_select_reason_for_visit</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_specialty_triggers</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_tab_populate</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>opt_tobacco_on_populate</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>pg_down</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>pg_up</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>risk_edit</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_bill</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_custom_ros_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Review Of Sytems: Custom Caption Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_custom_ros_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Review Of Sytems: Custom Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_hcc_count</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: HCC: HCC Count</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_hcc_ind</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: HCC: HCC Indicator</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_home_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Home Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_hpi_autolaunch_status</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_latex_numb</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Latex Number</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_order_grid_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>50</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Orders: Order Grid Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_picture_present</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_provider_id</field_name>
+    <field_type>Text</field_type>
+    <field_length>36</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_provider_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>95</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_1</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_10</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_11</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_12</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_13</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_14</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_15</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_16</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_17</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_18</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_2</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_3</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_4</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_5</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_6</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_7</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_8</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_reason_9</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_rfv_sub_menu_1_selection</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_rfv_sub_menu_2_selection</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_risk_config_template</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Configuration Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_risk_factor1</field_name>
+    <field_type>Text</field_type>
+    <field_length>6</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 1: Details</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_risk_factor2</field_name>
+    <field_type>Text</field_type>
+    <field_length>6</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 2: Details</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_risk_factor3</field_name>
+    <field_type>Text</field_type>
+    <field_length>6</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 3: Details</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_risk_factor4</field_name>
+    <field_type>Text</field_type>
+    <field_length>6</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 4: Details</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_risk_factor5</field_name>
+    <field_type>Text</field_type>
+    <field_length>6</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 5: Details</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_risk_factor6</field_name>
+    <field_type>Text</field_type>
+    <field_length>6</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Risk Factor 6: Details</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_selected_reason_for_visit</field_name>
+    <field_type>Text</field_type>
+    <field_length>55</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_selected_result</field_name>
+    <field_type>Text</field_type>
+    <field_length>1000</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_selected_rfv_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_selected_ros_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav_count</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation Count</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav1_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>25</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 1 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav1_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 1 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav1_template_type</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 1 Template Type</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav2_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 2 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav2_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 2 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav2_template_type</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 2 Template Type</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav3_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 3 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav3_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 3 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav3_template_type</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 3 Template Type</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav4_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 4 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav4_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 4 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav4_template_type</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 4 Template Type</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav5_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 5 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav5_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 5 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav5_template_type</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 5 Template Type</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav6_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 6 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav6_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 6 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav6_template_type</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 6 Template Type</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav7_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 7 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav7_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 7 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_sub_nav7_template_type</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Sub Navigation 7 Template Type</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_summary_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_summary_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab_count</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab Count</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab1_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 1 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab1_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 1 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab2_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 2 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab2_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 2 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab3_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 3 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab3_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 3 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab4_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 4 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab4_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 4 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab5_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 5 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab5_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 5 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab6_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 6 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab6_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 6 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab7_caption</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 7 Caption</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_tab7_template_name</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Tab 7 Template Name</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_untreated_skincancer_count</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>*Intake: Untreated Skin Cancer Count</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>txt_vital_signs</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment>Intake:Vital Signs:Captures the vital signs</field_comment>
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>vs_pg_down</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>fts_intake_</table_name>
+    <field_name>vs_pg_up</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>Y</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
   <fields_master>
     <table_name>Immunization_Rec_</table_name>
     <field_name>act_seqnum_flu_ped</field_name>
@@ -10674,6 +12395,402 @@
     <field_comment />
   </fields_master>
   <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>atxt_goto_page1</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>atxt_goto_page2</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>atxt_goto_page3</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>atxt_goto_top</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>atxt_immadult</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>atxt_immpeds</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>atxt_info_sets</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>atxt_page2</field_name>
+    <field_type>numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>atxt_page3_bottom</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_flu_no_neomycin</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_hepA_no_neomycin</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_require_location</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_require_lotnum</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_require_maidenname</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_show_del_admin_codes</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_show_inactive_cpt_xref</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_use_inv_tasking</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_use_inventory</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>opt_confirm</field_name>
+    <field_type>Numeric</field_type>
+    <field_length>0</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>opt_lotnum_reports</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_immadult</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_immpeds</field_name>
+    <field_type>Text</field_type>
+    <field_length>20</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_info_popup</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_launch_imm</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_launch_popup</field_name>
+    <field_type>Text</field_type>
+    <field_length>30</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_order_sets</field_name>
+    <field_type>Text</field_type>
+    <field_length>60</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_order_sets_adult</field_name>
+    <field_type>Text</field_type>
+    <field_length>60</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_page2_bottom</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_page2_top</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_page3_bottom</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_page4_bottom</field_name>
+    <field_type>Text</field_type>
+    <field_length>1</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_secondary_admin_code</field_name>
+    <field_type>Text</field_type>
+    <field_length>13</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>txt_source_prim_admin_code</field_name>
+    <field_type>Text</field_type>
+    <field_length>13</field_length>
+    <demographics_ind>N</demographics_ind>
+    <encounters_ind>N</encounters_ind>
+    <medical_records_ind>N</medical_records_ind>
+    <modifiable_ind>Y</modifiable_ind>
+    <required_ind>N</required_ind>
+    <field_comment />
+  </fields_master>
+  <fields_master>
     <table_name>srx_vaccine_admin_</table_name>
     <field_name>actCode</field_name>
     <field_type>Text</field_type>
@@ -11549,6 +13666,18 @@
     <field_value>195,83,253</field_value>
   </field_lists>
   <field_lists>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_hepA_no_neomycin</field_name>
+    <description>Checked</description>
+    <field_value>1</field_value>
+  </field_lists>
+  <field_lists>
+    <table_name>ngkbm_immunizations_</table_name>
+    <field_name>chk_hepA_no_neomycin</field_name>
+    <description>Unchecked</description>
+    <field_value>0</field_value>
+  </field_lists>
+  <field_lists>
     <table_name>srx_vaccine_admin_</table_name>
     <field_name>chk_VFC</field_name>
     <description>Checked</description>
@@ -11746,6 +13875,95 @@
     <trig_seq_no>0</trig_seq_no>
     <trig_order>1</trig_order>
     <parm1>vaccine_question_childteen</parm1>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_allergies</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Show Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>5</trig_order>
+    <condition>{fts_intake_.txt_latex_numb} &gt; 0</condition>
+    <parm2>F532B4D7-771C-45FC-B5F3-698E8CCF4934</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_allergies</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Show Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>6</trig_order>
+    <condition>{Immunization_Rec_.txt_gel_allergy_num}&gt;0</condition>
+    <parm2>7CF9508A-427D-41B7-8A2F-FF78E373ED4B</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_allergies</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Show Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>7</trig_order>
+    <condition>{Immunization_Rec_.txt_neomycin_a_num}&gt;0</condition>
+    <parm2>C1FDFEE9-5D63-4B97-B8DA-3F7FB5422315</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_allergies</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Show Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>8</trig_order>
+    <condition>{Immunization_Rec_.txt_eggallergy_num}&gt;0</condition>
+    <parm2>B1287825-12EA-481E-8372-1594DCC47882</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_allergies</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Stored Procedure</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>1</trig_order>
+    <parm1>ngkbm_getallergy_gelatin</parm1>
+    <parm2>62|0|1</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_allergies</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Stored Procedure</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>2</trig_order>
+    <parm1>ngkbm_getallergy_neomycin</parm1>
+    <parm2>63|0|1</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_allergies</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Stored Procedure</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>3</trig_order>
+    <parm1>ngkbm_geteggallergy</parm1>
+    <parm2>64|0|1</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_allergies</field>
+    <trig_name>Item Selected</trig_name>
+    <action>Stored Procedure</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>4</trig_order>
+    <parm1>ngkbm_getallergy_latex</parm1>
+    <parm2>65|0</parm2>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>local.opt_allergies</field>
+    <trig_name>Populate</trig_name>
+    <action>Assign Field Value</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>1</trig_order>
+    <parm2>14DCD2BD-1D1B-4521-A241-A4D77415602E</parm2>
     <enable_ind>Y</enable_ind>
   </triggers>
   <triggers>
@@ -11977,6 +14195,16 @@
     <trig_order>2</trig_order>
     <condition>{local.txt_time_ampm}=""</condition>
     <parm1>local.txt_time_ampm</parm1>
+    <enable_ind>Y</enable_ind>
+  </triggers>
+  <triggers>
+    <field>ngkbm_immunizations_.chk_hepA_no_neomycin</field>
+    <trig_name>Populate</trig_name>
+    <action>Show Item</action>
+    <trig_seq_no>0</trig_seq_no>
+    <trig_order>1</trig_order>
+    <condition>{ngkbm_immunizations_.chk_hepA_no_neomycin}=0</condition>
+    <parm2>365872B1-7A1F-4229-8D39-E8DFABB43178</parm2>
     <enable_ind>Y</enable_ind>
   </triggers>
   <triggers>
@@ -15394,6 +17622,206 @@
     <param_data>{srx_vaccine_admin_.txt_vfc_code}</param_data>
     <param_num>2</param_num>
   </sp_xref>
+  <sp_xref>
+    <trig_id>62</trig_id>
+    <param_type>P</param_type>
+    <param_name>@PersonId</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>U</data_type>
+    <data_length>0</data_length>
+    <param_data>{@CA.ID}</param_data>
+    <param_num>1</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>62</trig_id>
+    <param_type>P</param_type>
+    <param_name>@EnterpriseID</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>{@CO.ID}</param_data>
+    <param_num>2</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>62</trig_id>
+    <param_type>P</param_type>
+    <param_name>@PracticeID</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>{@DP.ID}</param_data>
+    <param_num>3</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>62</trig_id>
+    <param_type>P</param_type>
+    <param_name>@AllergyCount</param_name>
+    <param_dir>O   </param_dir>
+    <data_type>N</data_type>
+    <data_length>0</data_length>
+    <param_data>{Immunization_Rec_.txt_gel_allergy_num}</param_data>
+    <param_num>4</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>62</trig_id>
+    <param_type>P</param_type>
+    <param_name>@enc_date</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>{@EN.DT}</param_data>
+    <param_num>5</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>63</trig_id>
+    <param_type>P</param_type>
+    <param_name>@PersonId</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>U</data_type>
+    <data_length>0</data_length>
+    <param_data>{@CA.ID}</param_data>
+    <param_num>1</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>63</trig_id>
+    <param_type>P</param_type>
+    <param_name>@EnterpriseID</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>{@CO.ID}</param_data>
+    <param_num>2</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>63</trig_id>
+    <param_type>P</param_type>
+    <param_name>@PracticeID</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>{@DP.ID}</param_data>
+    <param_num>3</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>63</trig_id>
+    <param_type>P</param_type>
+    <param_name>@AllergyCount</param_name>
+    <param_dir>O   </param_dir>
+    <data_type>N</data_type>
+    <data_length>0</data_length>
+    <param_data>{Immunization_Rec_.txt_neomycin_a_num}</param_data>
+    <param_num>4</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>63</trig_id>
+    <param_type>P</param_type>
+    <param_name>@enc_date</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>{@EN.DT}</param_data>
+    <param_num>5</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>64</trig_id>
+    <param_type>P</param_type>
+    <param_name>@PersonId</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>U</data_type>
+    <data_length>0</data_length>
+    <param_data>{@CA.ID}</param_data>
+    <param_num>1</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>64</trig_id>
+    <param_type>P</param_type>
+    <param_name>@EnterpriseID</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>{@CO.ID}</param_data>
+    <param_num>2</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>64</trig_id>
+    <param_type>P</param_type>
+    <param_name>@PracticeID</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>{@DP.ID}</param_data>
+    <param_num>3</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>64</trig_id>
+    <param_type>P</param_type>
+    <param_name>@AllergyCount</param_name>
+    <param_dir>O   </param_dir>
+    <data_type>N</data_type>
+    <data_length>0</data_length>
+    <param_data>{Immunization_Rec_.txt_eggallergy_num}</param_data>
+    <param_num>4</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>64</trig_id>
+    <param_type>P</param_type>
+    <param_name>@enc_date</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>{@EN.DT}</param_data>
+    <param_num>5</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>65</trig_id>
+    <param_type>P</param_type>
+    <param_name>@PersonId</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>U</data_type>
+    <data_length>0</data_length>
+    <param_data>@CA.ID</param_data>
+    <param_num>1</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>65</trig_id>
+    <param_type>P</param_type>
+    <param_name>@EnterpriseID</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>@CO.ID</param_data>
+    <param_num>2</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>65</trig_id>
+    <param_type>P</param_type>
+    <param_name>@PracticeID</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>@DP.ID</param_data>
+    <param_num>3</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>65</trig_id>
+    <param_type>P</param_type>
+    <param_name>@AllergyCount</param_name>
+    <param_dir>O   </param_dir>
+    <data_type>N</data_type>
+    <data_length>0</data_length>
+    <param_data>{fts_intake_.txt_latex_numb}</param_data>
+    <param_num>4</param_num>
+  </sp_xref>
+  <sp_xref>
+    <trig_id>65</trig_id>
+    <param_type>P</param_type>
+    <param_name>@enc_date</param_name>
+    <param_dir>I   </param_dir>
+    <data_type>T</data_type>
+    <data_length>0</data_length>
+    <param_data>@EN.DT</param_data>
+    <param_num>5</param_num>
+  </sp_xref>
   <stored_procedures>
     <server>SQL Server</server>
     <name>nggetlanguagedbpicklist</name>
@@ -15605,6 +18033,134 @@ order by 3
 
 END
 
+</text>
+  </stored_procedures>
+  <stored_procedures>
+    <server>SQL Server</server>
+    <name>ngkbm_getallergy_gelatin</name>
+    <text>CREATE       PROCEDURE [dbo].[ngkbm_getallergy_gelatin]
+/*-- Created 2/4/08 **  - checking gelatin
+allergy for Varicella, MMR
+allergy_id 2549-GELATIN, 6534-GELATIN (PLS EXPN)
+Updated		2/25/08		added parameter enc_date and coditon date_resolved
+KBM Dept	4/6/09		added enterprise chart logic
+*/
+@PersonId uniqueidentifier,
+@EnterpriseID     CHAR(5),
+@PracticeID  CHAR(4),
+@AllergyCount INTEGER OUTPUT,
+@enc_date CHAR(8)
+AS
+DECLARE @v_ent_chart AS CHAR(1)
+EXEC ngkbm_check_enterprise_chart
+@EnterpriseID,
+@PersonId,
+@v_ent_chart OUTPUT
+SELECT  @AllergyCount=count(*)
+FROM allergy_mstr a, patient_allergy p
+WHERE a.allergy_id = p.allergy_id AND a.allergy_type_id = p.allergy_type_id
+and a.allergy_id in ('2549', '6534')
+and (p.date_resolved &gt; @enc_date or p.date_resolved = '00000000')
+and p.person_id=@personId
+and p.enterprise_id=@EnterpriseID
+and (p.practice_id=@PracticeID OR @v_ent_chart = 'Y')
+</text>
+  </stored_procedures>
+  <stored_procedures>
+    <server>SQL Server</server>
+    <name>ngkbm_getallergy_latex</name>
+    <text>CREATE     PROCEDURE [dbo].[ngkbm_getallergy_latex]
+/*-- Created 2/4/08 **  - checking latex
+allergy for all vaccines
+allergy_id 18921-latex, 8920-gloves, latex
+Updated		2/25/08 ** , added parameter enc_date and coditon date_resolved
+KBM Dept	4/6/09			added enterprise chart logic
+*/
+@PersonId uniqueidentifier,
+@EnterpriseID     CHAR(5),
+@PracticeID  CHAR(4),
+@AllergyCount INTEGER OUTPUT,
+@enc_date CHAR(8)
+AS
+DECLARE @v_ent_chart AS CHAR(1)
+EXEC ngkbm_check_enterprise_chart
+@EnterpriseID,
+@PersonId,
+@v_ent_chart OUTPUT
+SELECT  @AllergyCount=count(*)
+FROM allergy_mstr a, patient_allergy p
+WHERE a.allergy_id = p.allergy_id AND a.allergy_type_id = p.allergy_type_id
+and a.allergy_id in ('8921', '8920')
+and (p.date_resolved &gt; @enc_date or p.date_resolved = '00000000')
+and p.person_id=@personId
+and (p.enterprise_id=@EnterpriseID OR @v_ent_chart = 'Y')
+and p.practice_id=@PracticeID
+</text>
+  </stored_procedures>
+  <stored_procedures>
+    <server>SQL Server</server>
+    <name>ngkbm_getallergy_neomycin</name>
+    <text>CREATE   PROCEDURE [dbo].[ngkbm_getallergy_neomycin]
+/*-- Created 2/4/08 **  - checking neomycin
+allergy for MMR, IPV, Varicella
+allergy_id 2775-neomycin, 2776-neomycin acetate, 2777-neomycin sulfate, 4009-neomycin undecylenate
+Updated	2/25/08 ** , added parameter enc_date and coditon date_resolved
+KBM Dept	4/6/09			added enterprise chart logic
+*/
+@PersonId uniqueidentifier,
+@EnterpriseID     CHAR(5),
+@PracticeID  CHAR(4),
+@AllergyCount INTEGER OUTPUT,
+@enc_date CHAR(8)
+AS
+DECLARE @v_ent_chart AS CHAR(1)
+EXEC ngkbm_check_enterprise_chart
+@EnterpriseID,
+@PersonId,
+@v_ent_chart OUTPUT
+SELECT  @AllergyCount=count(*)
+FROM allergy_mstr a, patient_allergy p
+WHERE a.allergy_id = p.allergy_id AND a.allergy_type_id = p.allergy_type_id
+and a.allergy_id in ('2775', '2776', '2777', '4009')
+and (p.date_resolved &gt; @enc_date or p.date_resolved = '00000000')
+and p.person_id=@personId
+and p.enterprise_id=@EnterpriseID
+and (p.practice_id=@PracticeID OR @v_ent_chart = 'Y')
+</text>
+  </stored_procedures>
+  <stored_procedures>
+    <server>SQL Server</server>
+    <name>ngkbm_geteggallergy</name>
+    <text>CREATE     PROCEDURE [dbo].[ngkbm_geteggallergy]
+/****************************************************************************************************
+[- purpose:  checking for egg allergy -]
+[- details:  allergy_id 6947-EGG, 6948-EGG YOLK, 8413-EGG WHITE,900508-EGG/POULTRY -]
+[- type:     development -]
+[- created:  20070419 -]
+[- modified:  20080104 added condtion section using a.allergy_id in ('6947', '6948', '8413','900508')
+20080225	added parameter enc_date and coditon date_resolved
+20090406	added enterprise chart logic -]
+[- example:  select dbo.ngdev_linear_max(@num1, @num2) -]
+*****************************************************************************************************/
+@PersonId uniqueidentifier,
+@EnterpriseID     CHAR(5),
+@PracticeID  CHAR(4),
+@AllergyCount INTEGER OUTPUT,
+@enc_date CHAR(8)
+AS
+DECLARE @v_ent_chart AS CHAR(1)
+EXEC ngkbm_check_enterprise_chart
+@EnterpriseID,
+@PersonId,
+@v_ent_chart OUTPUT
+SELECT  @AllergyCount=count(*)
+FROM allergy_mstr a, patient_allergy p
+WHERE a.allergy_id = p.allergy_id AND a.allergy_type_id = p.allergy_type_id
+and a.allergy_id in ('6947', '6948', '8413','900508')
+and (p.date_resolved &gt; @enc_date or p.date_resolved = '00000000')
+and p.person_id=@personId
+and p.enterprise_id=@EnterpriseID
+and (p.practice_id=@PracticeID OR @v_ent_chart = 'Y')
 </text>
   </stored_procedures>
   <stored_procedures>
@@ -15965,6 +18521,18 @@ END
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
+    <trig_id>b1287825-12ea-481e-8372-1594dcc47882</trig_id>
+    <field_name>Button005</field_name>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>b1287825-12ea-481e-8372-1594dcc47882</trig_id>
+    <field_name>lbl_egg</field_name>
+    <seq_nbr>1</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
     <trig_id>780cdeb6-9bcd-4c41-a48e-16891888ea91</trig_id>
     <field_name>local.txt_time_hr</field_name>
     <field_value>{LEFT({local.txt_time}, 1 )}</field_value>
@@ -16091,6 +18659,18 @@ END
   <trig_mf_xref>
     <trig_id>4b042beb-243d-4387-8571-3dca744840bc</trig_id>
     <field_name>srx_vaccine_admin_.txt_vfc_reason</field_name>
+    <seq_nbr>1</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>c1fdfee9-5d63-4b97-b8da-3f7fb5422315</trig_id>
+    <field_name>Button007</field_name>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>c1fdfee9-5d63-4b97-b8da-3f7fb5422315</trig_id>
+    <field_name>lbl_neomycin</field_name>
     <seq_nbr>1</seq_nbr>
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
@@ -16421,6 +19001,18 @@ END
     <field_name>local.txt_scanned_cvx</field_name>
     <field_value>{srx_udg_immunizations_.cvx_code}</field_value>
     <seq_nbr>36</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>f532b4d7-771c-45fc-b5f3-698e8ccf4934</trig_id>
+    <field_name>Button008</field_name>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>f532b4d7-771c-45fc-b5f3-698e8ccf4934</trig_id>
+    <field_name>lbl_latex_allergy</field_name>
+    <seq_nbr>1</seq_nbr>
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
@@ -17489,6 +20081,13 @@ END
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
+    <trig_id>14dcd2bd-1d1b-4521-a241-a4d77415602e</trig_id>
+    <field_name>{@This}</field_name>
+    <field_value>{@This}+1</field_value>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
     <trig_id>fa3ec4fc-7255-425d-b7d4-a620030c0ed4</trig_id>
     <field_name>{@This}</field_name>
     <field_value>""</field_value>
@@ -17610,11 +20209,6 @@ END
     <field_name>lbl_refused</field_name>
     <field_value>255,0,0|240,10,24</field_value>
     <seq_nbr>4</seq_nbr>
-    <enabled_flag>Y</enabled_flag>
-  </trig_mf_xref>
-  <trig_mf_xref>
-    <trig_id>77ead66a-35fd-40c3-95e0-cde9a14a9804</trig_id>
-    <field_name>Button001</field_name>
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
@@ -18095,6 +20689,11 @@ END
   <trig_mf_xref>
     <trig_id>77ead66a-35fd-40c3-95e0-cde9a14a9804</trig_id>
     <field_name>Button004</field_name>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>77ead66a-35fd-40c3-95e0-cde9a14a9804</trig_id>
+    <field_name>Button001</field_name>
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
@@ -18682,6 +21281,42 @@ END
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
+    <trig_id>365872b1-7a1f-4229-8d39-e8dfabb43178</trig_id>
+    <field_name>imm_allergy_override_.txt_override_hepA_by</field_name>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>365872b1-7a1f-4229-8d39-e8dfabb43178</trig_id>
+    <field_name>immunization_ord_.txt_hepA_comments</field_name>
+    <seq_nbr>1</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>365872b1-7a1f-4229-8d39-e8dfabb43178</trig_id>
+    <field_name>lbl_hepA_description</field_name>
+    <seq_nbr>2</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>365872b1-7a1f-4229-8d39-e8dfabb43178</trig_id>
+    <field_name>Immunization_Rec_.item_hepA_peds</field_name>
+    <seq_nbr>3</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>365872b1-7a1f-4229-8d39-e8dfabb43178</trig_id>
+    <field_name>immunization_ord_.txt_hepA_override_reason</field_name>
+    <seq_nbr>4</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>365872b1-7a1f-4229-8d39-e8dfabb43178</trig_id>
+    <field_name>imm_allergy_override_.opt_override_a_hepA</field_name>
+    <seq_nbr>5</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
     <trig_id>fb869c8d-ab4b-4303-bdbd-e9afe5abfd33</trig_id>
     <field_name>local.txt_not_admin_reason</field_name>
     <seq_nbr>0</seq_nbr>
@@ -18705,6 +21340,18 @@ END
     <field_name>srx_vaccine_admin_.supplyQuantity</field_name>
     <field_value>1</field_value>
     <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>7cf9508a-427d-41b7-8a2f-ff78e373ed4b</trig_id>
+    <field_name>Button006</field_name>
+    <seq_nbr>0</seq_nbr>
+    <enabled_flag>Y</enabled_flag>
+  </trig_mf_xref>
+  <trig_mf_xref>
+    <trig_id>7cf9508a-427d-41b7-8a2f-ff78e373ed4b</trig_id>
+    <field_name>lbl_gelatin</field_name>
+    <seq_nbr>1</seq_nbr>
     <enabled_flag>Y</enabled_flag>
   </trig_mf_xref>
   <trig_mf_xref>
